@@ -1,0 +1,1 @@
+function tide_redemption:bgm/lyric/bgm_extra_introduciton/tick
