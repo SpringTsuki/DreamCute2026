@@ -1,5 +1,8 @@
 {
     "values": [
-        "tide_redemption:bgm/lyric/tick"
+        "tide_redemption:bgm/lyric/tick",
+        "tide_redemption:npc/tick",
+        "tide_redemption:main/tick",
+        "tide_redemption:boss/tick"
     ]
   }

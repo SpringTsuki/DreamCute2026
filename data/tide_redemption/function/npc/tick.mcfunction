@@ -1,0 +1,1 @@
+function tide_redemption:npc/yuukiriko/tick
