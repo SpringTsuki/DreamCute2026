@@ -15,9 +15,5 @@ execute as @e[tag=cut_module_A] at @s if score #user memory_cut_module matches 1
 execute as @e[tag=cut_module_B] at @s if score #user memory_cut_module matches 139 run function tide_redemption:boss/skill/memory_cut_module/check_module2
 
 # 技能结束
-<<<<<<< HEAD
 execute if score #user memory_cut_module matches 140 run function tide_redemption:boss/skill/memory_cut_module/end
 execute if score #user memory_cut_module matches 1..140 run function tide_redemption:boss/boss_tp_ground
-=======
-execute if score #user memory_cut_module matches 140 run function tide_redemption:boss/skill/memory_cut_module/end
->>>>>>> 04afdce2a1135f854342cd68d97266e3c8754666

@@ -1,17 +1,10 @@
 {
     "values": [
-<<<<<<< HEAD
         "tide_redemption:bgm/tick",
         "tide_redemption:bgm/lyric/tick",
         "tide_redemption:npc/tick",
         "tide_redemption:main/tick",
         "tide_redemption:boss/tick",
         "tide_redemption:monster/tick"
-=======
-        "tide_redemption:bgm/lyric/tick",
-        "tide_redemption:npc/tick",
-        "tide_redemption:main/tick",
-        "tide_redemption:boss/tick"
->>>>>>> 04afdce2a1135f854342cd68d97266e3c8754666
     ]
   }

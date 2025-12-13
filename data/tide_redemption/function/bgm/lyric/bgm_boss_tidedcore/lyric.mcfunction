@@ -98,11 +98,7 @@ execute if score #user bgm_boss_tidedcore matches 1896 run title @a title {"text
 execute if score #user bgm_boss_tidedcore matches 1896 run title @a subtitle {"translate":"bgm.boss_tidedcore.29"}
 
 execute if score #user bgm_boss_tidedcore matches 1906 run title @a title {"text":""}
-<<<<<<< HEAD
 execute if score #user bgm_boss_tidedcore matches 1906 run title @a subtitle {"translate":"bgm.boss_tidedcore.29.5"}
-=======
-execute if score #user bgm_boss_tidedcore matches 1906 run title @a subtitle {"translate":"bgm.boss_tidedcore.29"}
->>>>>>> 04afdce2a1135f854342cd68d97266e3c8754666
 
 execute if score #user bgm_boss_tidedcore matches 1970 run title @a title {"text":""}
 execute if score #user bgm_boss_tidedcore matches 1970 run title @a subtitle {"translate":"bgm.boss_tidedcore.30"}

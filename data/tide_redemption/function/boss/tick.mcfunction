@@ -1,5 +1,4 @@
 function tide_redemption:boss/skill/boss_spawn/tick
-<<<<<<< HEAD
 function tide_redemption:boss/skill/memory_cut_module/tick
 function tide_redemption:boss/skill/memory_cut_shard/tick
 function tide_redemption:boss/skill/memory_torrent_dataline/tick
@@ -10,18 +9,11 @@ function tide_redemption:boss/skill/memory_forget_near/tick
 
 function tide_redemption:boss/skill/memory_forever_frozen/tick
 function tide_redemption:boss/skill/memory_forever_delete/tick
-=======
-function tide_redemption:boss/skill/memory_torrent_dataline/tick
-function tide_redemption:boss/skill/memory_cut_module/tick
-
-scoreboard players add #user tidedcore_fight 1
->>>>>>> 04afdce2a1135f854342cd68d97266e3c8754666
 
 #调试模式
 scoreboard objectives setdisplay sidebar tidedcore_fight
 scoreboard players add SpringAurora tidedcore_fight 1
 
-<<<<<<< HEAD
 # 检测玩家是否存活
 execute if score #user tidedcore_fight matches 1..5580 run function tide_redemption:boss/boss_check_player
 
@@ -32,8 +24,6 @@ scoreboard players add #user tidedcore_fight 1
 scoreboard players add #user tidedcore_random 1
 execute if score #user tidedcore_random matches 2.. run scoreboard players set #user tidedcore_random 0
 
-=======
->>>>>>> 04afdce2a1135f854342cd68d97266e3c8754666
 # BOSS血量增长恢复
 execute if score #user tidedcore_fight matches 1..359 run scoreboard players add #tidedcore tidedcore_hp 3
 execute if score #user tidedcore_fight matches 1..359 run execute store result bossbar minecraft:boss_tidedcore value run scoreboard players get #tidedcore tidedcore_hp
@@ -44,7 +34,6 @@ execute if score #user tidedcore_fight matches 360 run bossbar set minecraft:bos
 # 同步BOSS血量
 execute if score #user tidedcore_fight matches 360.. run execute as @e[tag=tidedcore] at @s store result score #tidedcore tidedcore_hp run data get entity @s Health
 execute if score #user tidedcore_fight matches 360.. run execute store result bossbar minecraft:boss_tidedcore value run scoreboard players get #tidedcore tidedcore_hp
-<<<<<<< HEAD
 execute if score #user tidedcore_fight matches 360.. unless entity @e[tag=tidedcore] run scoreboard players set #tidedcore tidedcore_hp 0
 
 # 检测BOSS血量，若BOSS血量归零则BOSS战成功
@@ -55,17 +44,11 @@ execute if score #tidedcore tidedcore_minhp matches 1 if score #tidedcore tidedc
 
 # 生成BOSS
 execute if score #user tidedcore_fight matches 359 run summon minecraft:zombie 937 147 2031 {Tags:[tidedcore],Health:1024f,attributes:[{id:"minecraft:generic.max_health",base:1024f}],ArmorDropChances:[0f,0f,0f,0f],ArmorItems:[{id:"minecraft:netherite_boots"},{id:"minecraft:netherite_leggings"},{id:"minecraft:netherite_chestplate"},{id:"minecraft:netherite_helmet"}]}
-=======
-
-# 生成BOSS 且等待最终修改TP生成坐标
-execute if score #user tidedcore_fight matches 359 run summon minecraft:zombie -41 -60 48 {Tags:[tidedcore],Health:1024f,attributes:[{id:"minecraft:generic.max_health",base:1024f}]}
->>>>>>> 04afdce2a1135f854342cd68d97266e3c8754666
 
 # 召唤雷电
 execute if score #user tidedcore_fight matches 360 run execute as @e[tag=tidedcore] at @s run summon minecraft:lightning_bolt ~ ~ ~
 
 # 第一次地火
-<<<<<<< HEAD
 execute if score #user tidedcore_fight matches 640 run function tide_redemption:boss/skill/memory_torrent_dataline/init
 
 # 第一次分摊
@@ -145,11 +128,3 @@ execute if score #user tidedcore_fight matches 258 run tellraw @a {"translate":"
 
 execute if score #user tidedcore_fight matches 5160 run tellraw @a {"translate":"game.boss_fight.delete1"}
 execute if score #user tidedcore_fight matches 5260 run tellraw @a {"translate":"game.boss_fight.delete2"}
-=======
-execute if score #user tidedcore_fight matches 640..940 run function tide_redemption:boss/boss_tp_ground
-execute if score #user tidedcore_fight matches 640 run function tide_redemption:boss/skill/memory_torrent_dataline/init
-
-# 第一次分摊
-execute if score #user tidedcore_fight matches 1290..1470 run function tide_redemption:boss/boss_tp
-execute if score #user tidedcore_fight matches 1290 run function tide_redemption:boss/skill/memory_cut_module/init
->>>>>>> 04afdce2a1135f854342cd68d97266e3c8754666

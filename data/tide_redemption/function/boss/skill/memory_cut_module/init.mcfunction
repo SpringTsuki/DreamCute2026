@@ -16,10 +16,5 @@ bossbar set minecraft:memory_cut_module max 140
 bossbar set minecraft:memory_cut_module players @a
 
 # 选择两位需要进行分摊处理伤害的玩家
-<<<<<<< HEAD
 execute as @r[x=924,y=145,z=2043,dx=25,dy=7,dz=-25] at @s run tag @s add cut_module_A
 execute as @r[x=924,y=145,z=2043,dx=25,dy=7,dz=-25,tag=!cut_module_A] at @r run tag @s add cut_module_B
-=======
-tag @r add cut_module_A
-tag @r[tag=!cut_module_A] add cut_module_B
->>>>>>> 04afdce2a1135f854342cd68d97266e3c8754666
