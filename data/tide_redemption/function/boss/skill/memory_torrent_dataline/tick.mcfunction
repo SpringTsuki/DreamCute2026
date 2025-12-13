@@ -20,8 +20,11 @@ execute if score #user memory_torrent_dataline.timeline matches 160 run function
 execute if score #user memory_torrent_dataline.timeline matches 180 run function tide_redemption:boss/skill/memory_torrent_dataline/miniboss/aoe_red
 execute if score #user memory_torrent_dataline.timeline matches 180 run function tide_redemption:boss/skill/memory_torrent_dataline/miniboss/miniboss_damage
 
+<<<<<<< HEAD
 execute if score #user memory_torrent_dataline.timeline matches 200 run bossbar remove memory_torrent_dataline
 
+=======
+>>>>>>> 04afdce2a1135f854342cd68d97266e3c8754666
 execute if score #user memory_torrent_dataline.timeline matches 200 run function tide_redemption:boss/skill/memory_torrent_dataline/miniboss/miniboss_move
 execute if score #user memory_torrent_dataline.timeline matches 200 run function tide_redemption:boss/skill/memory_torrent_dataline/miniboss/aoe_red
 execute if score #user memory_torrent_dataline.timeline matches 200 run function tide_redemption:boss/skill/memory_torrent_dataline/miniboss/miniboss_damage
@@ -43,6 +46,10 @@ execute if score #user memory_torrent_dataline.timeline matches 280 run function
 execute if score #user memory_torrent_dataline.timeline matches 280 run function tide_redemption:boss/skill/memory_torrent_dataline/miniboss/miniboss_damage
 
 execute if score #user memory_torrent_dataline.timeline matches 300 run kill @e[tag=distant_1]
+<<<<<<< HEAD
+=======
+execute if score #user memory_torrent_dataline.timeline matches 300 run bossbar remove memory_torrent_dataline
+>>>>>>> 04afdce2a1135f854342cd68d97266e3c8754666
 execute if score #user memory_torrent_dataline.timeline matches 300 run function tide_redemption:boss/skill/memory_torrent_dataline/miniboss/miniboss_move
 execute if score #user memory_torrent_dataline.timeline matches 300 run function tide_redemption:boss/skill/memory_torrent_dataline/miniboss/aoe_red
 execute if score #user memory_torrent_dataline.timeline matches 300 run function tide_redemption:boss/skill/memory_torrent_dataline/miniboss/miniboss_damage
@@ -87,6 +94,10 @@ execute if score #user memory_torrent_dataline.timeline matches 500 run function
 execute if score #user memory_torrent_dataline.timeline matches 500 run function tide_redemption:boss/skill/memory_torrent_dataline/miniboss/aoe_red
 execute if score #user memory_torrent_dataline.timeline matches 500 run function tide_redemption:boss/skill/memory_torrent_dataline/miniboss/miniboss_damage
 
+<<<<<<< HEAD
 execute if score #user memory_torrent_dataline.timeline matches 1..500 run function tide_redemption:boss/boss_tp
 execute if score #user memory_torrent_dataline.timeline matches 500 run function tide_redemption:boss/skill/memory_torrent_dataline/end
 
+=======
+execute if score #user memory_torrent_dataline.timeline matches 500 run function tide_redemption:boss/skill/memory_torrent_dataline/end
+>>>>>>> 04afdce2a1135f854342cd68d97266e3c8754666

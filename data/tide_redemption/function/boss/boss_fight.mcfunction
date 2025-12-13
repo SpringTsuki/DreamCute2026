@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 stopsound @a
+=======
+>>>>>>> 04afdce2a1135f854342cd68d97266e3c8754666
 # BOSS生成初始化
 function tide_redemption:boss/skill/boss_spawn/init
 
@@ -8,6 +11,7 @@ function tide_redemption:bgm/lyric/bgm_boss_tidedcore/init
 # BOSS时间轴初始化
 scoreboard objectives add tidedcore_fight trigger
 scoreboard players set #user tidedcore_fight 0
+<<<<<<< HEAD
 
 # BOSS技能随机数
 scoreboard objectives add tidedcore_random trigger
@@ -28,3 +32,5 @@ spawnpoint @a 937 147 2061
 # 锁血
 scoreboard objectives add tidedcore_minhp trigger
 scoreboard players set #tidedcore tidedcore_minhp 1
+=======
+>>>>>>> 04afdce2a1135f854342cd68d97266e3c8754666
