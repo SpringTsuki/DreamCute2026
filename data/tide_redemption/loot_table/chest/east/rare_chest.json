@@ -1,0 +1,123 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": 27,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:air",
+            "weight": 10
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:rotten_flesh",
+            "weight": 40,
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "translate": "game.item.resource.material"
+                }
+              },
+              {
+                "mode": "append",
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "translate": "game.item.resource.material_lore1"
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "translate": "game.item.resource.material_lore2"
+                  },
+                  {
+                    "translate": "game.item.resource.material_lore3"
+                  },
+                  {
+                    "translate": "game.item.resource.material_lore4"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:cobblestone",
+            "weight": 20,
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "translate": "game.item.resource.cobblestone"
+                }
+              },
+              {
+                "mode": "append",
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "translate": "game.item.resource.cobblestone_lore1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_ingot",
+            "weight": 10,
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "translate": "game.item.resource.iron_ingot"
+                }
+              },
+              {
+                "mode": "append",
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "translate": "game.item.resource.iron_ingot_lore1"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:cooked_beef",
+            "weight": 20,
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "translate": "game.item.resource.food_beef"
+                }
+              },
+              {
+                "mode": "append",
+                "function": "minecraft:set_lore",
+                "entity": "this",
+                "lore": [
+                  {
+                    "translate": "game.item.resource.food_beef_lore1"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

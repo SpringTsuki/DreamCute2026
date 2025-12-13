@@ -1,0 +1,1 @@
+execute as @e[tag=tidedcore] at @s facing entity @p eyes run tp @s 937 150 2031 ~ ~

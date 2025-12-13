@@ -1,0 +1,1 @@
+summon minecraft:villager 997 73 2047 {Tags:[tided_npc_yuukiriko,tided_npc_yuukiriko_shop],NoAI:true,NoGravity:true,Silent:true,Age:10000000,CanPickUpLoot:false,Invulnerable:true,VillagerData:{level:5,profession:armorer,type:plains},CustomName:'{"translate":"game.npc.name.yuukiriko"}',active_effects:[{id:"minecraft:invisibility",amplifier:1,duration:-1,show_particles:false}]}

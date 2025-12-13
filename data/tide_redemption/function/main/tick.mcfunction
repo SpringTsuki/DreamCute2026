@@ -1,0 +1,1 @@
+function tide_redemption:main/stage_1/tick
