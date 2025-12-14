@@ -6,3 +6,7 @@ scoreboard objectives remove tided_npc_starrymika_chat
 
 # 对话触发
 scoreboard objectives remove tided_npc_starrymika_trigger
+
+# 基地音乐
+scoreboard objectives remove bgm_base
+scoreboard objectives remove bgm_leave_base

@@ -1,1 +1,38 @@
-CustomNameVisible:true
+我需要你协助我生成一个村民，村民所需要的基本属性为：
+Tags:[tided_npc_starrymika,tided_npc_starrymika_shop],NoAI:true,NoGravity:true,Silent:true,Age:10000000,CanPickUpLoot:false,Invulnerable:true,VillagerData:{level:5,profession:toolsmith,type:plains},CustomName:'{"translate":"game.npc.name.starrymika"}',active_effects:[{id:"minecraft:invisibility",amplifier:1,duration:-1,show_particles:false}]
+
+而后，交易的物品清单如下：
+【腐肉】give @p minecraft:rotten_flesh[custom_name='{"translate":"game.item.resource.material"}',lore=['{"translate":"game.item.resource.material_lore1"}','{"text":""}','{"translate":"game.item.resource.material_lore2"}','{"translate":"game.item.resource.material_lore3"}','{"translate":"game.item.resource.material_lore4"}']]
+【圆石】give @p minecraft:cobblestone[custom_name='{"translate":"game.item.resource.cobblestone"}',lore=['{"translate":"game.item.resource.cobblestone_lore1"}']]
+【铁锭】give @p minecraft:iron_ingot[custom_name='{"translate":"game.item.resource.iron_ingot"}',lore=['{"translate":"game.item.resource.iron_ingot_lore1"}']]
+【盾牌】give @p minecraft:shield[unbreakable={},custom_name='{"translate":"game.item.weapon.iron_shield"}',lore=['{"translate":"game.item.weapon.iron_shield_lore1"}'],attribute_modifiers=[{id:"armor",amount:2,operation:"add_value",type:generic.armor,slot:"offhand"}]]
+【牛肉】give @p minecraft:cooked_beef[custom_name='{"translate":"game.item.resource.food_beef"}',lore=['{"translate":"game.item.resource.food_beef_lore1"}']]
+【木切割刀】give @p minecraft:wooden_sword[unbreakable={},custom_name='{"translate":"game.item.weapon.wooden_knife"}',lore=['{"translate":"game.item.weapon.wooden_knife_lore1"}'],enchantments={levels:{looting:2}},attribute_modifiers={modifiers:[{id:"attack_speed",amount:2.0,operation:add_value,type:"minecraft:generic.attack_speed",slot:mainhand},{id:"attack_damage",amount:3.0,operation:add_value,type:"minecraft:generic.attack_damage",slot:mainhand}]}]
+【铁切割刀】give @p minecraft:iron_sword[unbreakable={},custom_name='{"translate":"game.item.weapon.iron_knife"}',lore=['{"translate":"game.item.weapon.iron_knife_lore1"}'],attribute_modifiers=[{amount:2,id:"attack_speed",operation:"add_value",type:"generic.attack_speed",slot:"mainhand"},{amount:5,id:"attack_damage",operation:"add_value",type:"generic.attack_damage",slot:"mainhand"}],enchantments={looting:2,sharpness:1}]
+【石制佩剑】give @p minecraft:stone_sword[unbreakable={},custom_name='{"translate":"game.item.weapon.stone_sword"}',lore=['{"translate":"game.item.weapon.stone_sword_lore1"}'],enchantments={levels:{sharpness:2}}]
+【铁制佩剑】give @p minecraft:iron_sword[unbreakable={},custom_name='{"translate":"game.item.weapon.iron_sword"}',lore=['{"translate":"game.item.weapon.iron_sword_lore1"}'],enchantments={sharpness:2}]
+【木弓】give @p minecraft:bow[unbreakable={},custom_name='{"translate":"game.item.weapon.basic_bow"}',lore=['{"translate":"game.item.weapon.basic_bow_lore1"}'],enchantments={levels:{power:1}}]
+【铁弓】give @p minecraft:bow[unbreakable={},custom_name='{"translate":"game.item.weapon.iron_bow"}',lore=['{"translate":"game.item.weapon.iron_bow_lore1"}'],enchantments={power:2,knockback:1},attribute_modifiers=[{amount:0.1,id:"move_speed",operation:"add_multiplied_base",type:"generic.movement_speed",slot:"mainhand"}]]
+【箭】give @p minecraft:arrow[custom_name='{"translate":"game.item.weapon.arrow"}',lore=['{"translate":"game.item.weapon.arrow_lore1"}']]
+【铁头盔】give @p minecraft:iron_helmet[custom_name='{"translate":"game.item.armor.iron_helmet"}',lore=['{"translate":"game.item.armor.iron_helmet_lore1"}'],enchantments={protection:2}]
+【铁胸甲】give @p minecraft:iron_chestplate[custom_name='{"translate":"game.item.armor.iron_chestplate"}',lore=['{"translate":"game.item.armor.iron_chestplate_lore1"}'],enchantments={protection:2}]
+【铁护腿】give @p minecraft:iron_leggings[custom_name='{"translate":"game.item.armor.iron_leggings"}',lore=['{"translate":"game.item.armor.iron_leggings_lore1"}'],enchantments={protection:2}]
+【铁鞋子】give @p minecraft:iron_boots[custom_name='{"translate":"game.item.armor.iron_boots"}',lore=['{"translate":"game.item.armor.iron_boots_lore1"}'],enchantments={protection:2}]
+【硬化皮革头盔】give @p minecraft:leather_helmet[unbreakable={},custom_name='{"translate":"game.item.armor.cobblestone_helmet"}',lore=['{"translate":"game.item.armor.cobblestone_helmet_lore1"}'],enchantments={levels:{protection:1}}]
+【硬化皮革胸甲】give @p minecraft:leather_chestplate[unbreakable={},custom_name='{"translate":"game.item.armor.cobblestone_chestplate"}',lore=['{"translate":"game.item.armor.cobblestone_chestplate_lore1"}'],enchantments={levels:{protection:1}}]
+【硬化皮革护腿】give @p minecraft:leather_leggings[unbreakable={},custom_name='{"translate":"game.item.armor.cobblestone_leggins"}',lore=['{"translate":"game.item.armor.cobblestone_leggins_lore1"}'],enchantments={levels:{protection:1}}]
+【硬化皮革鞋子】give @p minecraft:leather_boots[unbreakable={},custom_name='{"translate":"game.item.armor.cobblestone_boots"}',lore=['{"translate":"game.item.armor.cobblestone_boots_lore1"}'],enchantments={levels:{protection:1}}]
+
+交易清单如下：
+【圆石】x30 兑换【铁锭】x1
+【圆石】x5 + 【铁锭】x1 兑换 【盾牌】x1
+【腐肉】x10 + 【圆石】x1 兑换 【牛肉】x20
+【铁锭】x3 + 【木切割刀】x1 兑换 【铁切割刀】x1
+【铁锭】x3 + 【石制佩剑】x1 兑换 【铁制佩剑】x1
+【铁锭】x3 + 【木弓】x1 兑换 【铁弓】x1
+【圆石】x1 兑换 【箭】x32
+【铁锭】x1 + 【硬化皮革头盔】x1 兑换 【铁头盔】x1
+【铁锭】x3 + 【硬化皮革胸甲】x1 兑换 【铁胸甲】x1
+【铁锭】x2 + 【硬化皮革护腿】x1 兑换 【铁护腿】x1
+【铁锭】x1 + 【硬化皮革鞋子】x1 兑换 【铁鞋子】x1
+

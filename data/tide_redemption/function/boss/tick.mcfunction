@@ -6,7 +6,6 @@ function tide_redemption:boss/skill/memory_torrent_song/tick
 function tide_redemption:boss/skill/memory_torrent_bleeding/tick
 function tide_redemption:boss/skill/memory_forget_far/tick
 function tide_redemption:boss/skill/memory_forget_near/tick
-
 function tide_redemption:boss/skill/memory_forever_frozen/tick
 function tide_redemption:boss/skill/memory_forever_delete/tick
 
@@ -42,6 +41,30 @@ execute if score #tidedcore tidedcore_hp matches 0 run function tide_redemption:
 # 锁血机制
 execute if score #tidedcore tidedcore_minhp matches 1 if score #tidedcore tidedcore_hp matches ..100 run data modify entity @e[tag=tidedcore,limit=1,type=zombie] Health set value 100
 
+# 锁血台词
+execute if score #user tidedcore_fight matches 361..5060 if score #tidedcore tidedcore_hp matches ..100 run scoreboard objectives add tidedcore_check_hp_defend trigger
+scoreboard players add #user tidedcore_check_hp_defend 1
+
+execute if score #user tidedcore_check_hp_defend matches 20 run tellraw @a {"translate":"game.boss_fight.defend1"}
+execute if score #user tidedcore_check_hp_defend matches 60 run tellraw @a {"translate":"game.boss_fight.defend2"}
+execute if score #user tidedcore_check_hp_defend matches 100 run tellraw @a {"translate":"game.boss_fight.defend3"}
+execute if score #user tidedcore_fight matches 5100 if score #user tidedcore_check_hp_defend matches 1.. run tellraw @a {"translate":"game.boss_fight.defend_defuse"}
+
+# 狂暴时声援台词（触发条件，狂暴读条3s内血量小于100即可触发）
+execute if score #user tidedcore_fight matches 5120 if score #tidedcore tidedcore_hp matches ..100 run scoreboard objectives add tidedcore_check_hp_delete trigger
+scoreboard players add #user tidedcore_check_hp_delete 1
+execute if score #user tidedcore_check_hp_delete matches 20 run tellraw @a {"translate":"game.boss_fight.cheer1"}
+execute if score #user tidedcore_check_hp_delete matches 50 run tellraw @a {"translate":"game.boss_fight.cheer2"}
+execute if score #user tidedcore_check_hp_delete matches 80 run tellraw @a {"translate":"game.boss_fight.cheer3"}
+execute if score #user tidedcore_check_hp_delete matches 110 run tellraw @a {"translate":"game.boss_fight.cheer4"}
+execute if score #user tidedcore_check_hp_delete matches 140 run tellraw @a {"translate":"game.boss_fight.cheer5"}
+execute if score #user tidedcore_check_hp_delete matches 170 run tellraw @a {"translate":"game.boss_fight.cheer6"}
+execute if score #user tidedcore_check_hp_delete matches 200 run tellraw @a {"translate":"game.boss_fight.cheer7"}
+execute if score #user tidedcore_check_hp_delete matches 230 run tellraw @a {"translate":"game.boss_fight.cheer8"}
+execute if score #user tidedcore_check_hp_delete matches 260 run tellraw @a {"translate":"game.boss_fight.cheer9"}
+execute if score #user tidedcore_check_hp_delete matches 290 run tellraw @a {"translate":"game.boss_fight.cheer10"}
+execute if score #user tidedcore_check_hp_delete matches 320 run tellraw @a {"translate":"game.boss_fight.cheer11"}
+
 # 生成BOSS
 execute if score #user tidedcore_fight matches 359 run summon minecraft:zombie 937 147 2031 {Tags:[tidedcore],Health:1024f,attributes:[{id:"minecraft:generic.max_health",base:1024f}],ArmorDropChances:[0f,0f,0f,0f],ArmorItems:[{id:"minecraft:netherite_boots"},{id:"minecraft:netherite_leggings"},{id:"minecraft:netherite_chestplate"},{id:"minecraft:netherite_helmet"}]}
 
@@ -69,6 +92,9 @@ execute if score #user tidedcore_fight matches 2340 run function tide_redemption
 
 # 永恒冻结 进入P2
 execute if score #user tidedcore_fight matches 2400 run function tide_redemption:boss/skill/memory_forever_frozen/init
+execute if score #user tidedcore_fight matches 2450 run tellraw @a {"translate":"game.boss_fight.frozen1"}
+execute if score #user tidedcore_fight matches 2540 run tellraw @a {"translate":"game.boss_fight.frozen2"}
+execute if score #user tidedcore_fight matches 2580 run tellraw @a {"translate":"game.boss_fight.frozen3"}
 
 # 第一次钢铁
 execute if score #user tidedcore_fight matches 2830 run function tide_redemption:boss/skill/memory_forget_near/init
@@ -126,5 +152,5 @@ execute if score #user tidedcore_fight matches 192 run tellraw @a {"translate":"
 execute if score #user tidedcore_fight matches 230 run tellraw @a {"translate":"game.boss_fight.6"}
 execute if score #user tidedcore_fight matches 258 run tellraw @a {"translate":"game.boss_fight.7"}
 
-execute if score #user tidedcore_fight matches 5160 run tellraw @a {"translate":"game.boss_fight.delete1"}
-execute if score #user tidedcore_fight matches 5260 run tellraw @a {"translate":"game.boss_fight.delete2"}
+execute if score #user tidedcore_fight matches 5000 run tellraw @a {"translate":"game.boss_fight.delete1"}
+execute if score #user tidedcore_fight matches 5030 run tellraw @a {"translate":"game.boss_fight.delete2"}

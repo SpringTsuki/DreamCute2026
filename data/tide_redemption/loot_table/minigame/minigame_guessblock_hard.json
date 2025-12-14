@@ -1,0 +1,97 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:coal_block",
+          "weight": 1,
+          "functions": [{
+            "function": "set_components",
+            "components": {
+              "max_stack_size": 1
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:lapis_block",
+          "weight": 1,
+          "functions": [{
+            "function": "set_components",
+            "components": {
+              "max_stack_size": 1
+            }
+          }] 
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:redstone_block",
+          "weight": 1,
+          "functions": [{
+            "function": "set_components",
+            "components": {
+              "max_stack_size": 1
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_block",
+          "weight": 1,
+          "functions": [{
+            "function": "set_components",
+            "components": {
+              "max_stack_size": 1
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:emerald_block",
+          "weight": 1,
+          "functions": [{
+            "function": "set_components",
+            "components": {
+              "max_stack_size": 1
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:gold_block",
+          "weight": 1,
+          "functions": [{
+            "function": "set_components",
+            "components": {
+              "max_stack_size": 1
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_block",
+          "weight": 1,
+          "functions": [{
+            "function": "set_components",
+            "components": {
+              "max_stack_size": 1
+            }
+          }]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_block",
+          "weight": 1,
+          "functions": [{
+            "function": "set_components",
+            "components": {
+              "max_stack_size": 1
+            }
+          }]
+        }
+      ]
+    }
+  ]
+}

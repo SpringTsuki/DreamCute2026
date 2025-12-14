@@ -1,1 +1,0 @@
-particle dust{color:[1.0, 0.0, 0.0],scale:2.0} ~ ~ ~ 0 0 0 0 1 force

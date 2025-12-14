@@ -18,3 +18,6 @@
 
 # 实验体 α型 （僵尸、最大血量15）
 execute as @e[type=minecraft:falling_block,tag=tided_monster.east,tag=tided_monster.a.zombie] at @s run function tide_redemption:monster/east/a_zombie
+
+# 特殊形态实验体 α型 （僵尸、最大血量40）
+execute as @e[type=minecraft:falling_block,tag=tided_monster.east,tag=tided_monster.a.special_zombie] at @s run function tide_redemption:monster/east/special_zombie

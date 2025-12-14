@@ -12,3 +12,7 @@ clone 936 143 2032 938 145 2032 to minecraft:overworld 936 147 2043 replace
 
 scoreboard objectives remove tidedcore_fight
 scoreboard objectives remove tidedcore_random
+scoreboard objectives remove tidedcore_check_hp_defend
+scoreboard objectives remove tidedcore_check_hp_delete
+
+# function tide_redemption:boss/boss_fight_end

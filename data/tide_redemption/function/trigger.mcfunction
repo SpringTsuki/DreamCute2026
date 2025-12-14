@@ -14,7 +14,6 @@ function tide_redemption:boss/skill/memory_torrent_dataline/init
 # 「记忆分割 · 模块化」| 「Memory Cut · Module」 - 分摊
 function tide_redemption:boss/skill/memory_cut_module/init
 
-<<<<<<< HEAD
 # 「记忆洪流 · 终末曲」| 「Memory Torrent · EndSinger」 - 踩塔
 function tide_redemption:boss/skill/memory_torrent_song/init
 
@@ -38,17 +37,10 @@ function tide_redemption:boss/skill/memory_forever_delete/init
 
 # 假人
 function tide_redemption:player
-=======
-# 假人
->>>>>>> 04afdce2a1135f854342cd68d97266e3c8754666
 player SpringAurora spawn
 player CastorVow spawn
 player Starry_Mika spawn
 player Yuan_Ye spawn
-<<<<<<< HEAD
 player YuukiRiko spawn
 
 function tide_redemption:boss/lib/image/cut_shard
-=======
-player YuukiRiko spawn
->>>>>>> 04afdce2a1135f854342cd68d97266e3c8754666

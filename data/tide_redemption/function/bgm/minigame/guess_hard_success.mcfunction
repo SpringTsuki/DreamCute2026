@@ -1,0 +1,1 @@
+execute as @a at @s run playsound minecraft:minigame_guessblock_hard_success master @s ~ ~ ~ 0.15

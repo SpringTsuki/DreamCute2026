@@ -24,4 +24,6 @@ setblock 972 78 2004 minecraft:spawner{Delay:-1, MaxNearbyEntities:1, MaxSpawnDe
 setblock 956 78 2076 minecraft:soul_campfire
 setblock 956 78 2076 minecraft:spawner{Delay:-1, MaxNearbyEntities:1, MaxSpawnDelay:1000, MinSpawnDelay:400, RequiredPlayerRange:18, RequiredPlayerRange:18, RequiredPlayerRange:18, SpawnCount: 1, SpawnRange: 0s,SpawnData:{entity:{BlockState:{Name:"barrier"},DropItem:false,HurtEntities:false,NoGravity:true,Silent:true,Pos:[956.0,82.0,2076.0],Tags:["tided_monster","tided_monster.east","tided_monster.a.zombie"],id:"minecraft:falling_block"}}}
 
-# 实验体 β型 （僵尸、最大血量30）
+# 特殊形态实验体 α型 （僵尸、最大血量40）
+setblock 948 80 2042 minecraft:soul_campfire
+setblock 948 80 2042 minecraft:spawner{Delay:-1, MaxNearbyEntities:1, MaxSpawnDelay:1000, MinSpawnDelay:400, RequiredPlayerRange:18, RequiredPlayerRange:18, RequiredPlayerRange:18, SpawnCount: 1, SpawnRange: 0s,SpawnData:{entity:{BlockState:{Name:"barrier"},DropItem:false,HurtEntities:false,NoGravity:true,Silent:true,Pos:[948.0,83.0,2042.0],Tags:["tided_monster","tided_monster.east","tided_monster.a.special_zombie"],id:"minecraft:falling_block"}}}

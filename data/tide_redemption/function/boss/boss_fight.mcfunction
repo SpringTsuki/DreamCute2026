@@ -28,3 +28,10 @@ spawnpoint @a 937 147 2061
 # 锁血
 scoreboard objectives add tidedcore_minhp trigger
 scoreboard players set #tidedcore tidedcore_minhp 1
+
+# 若在狂暴前打到小于100血，则触发此计分板用于提示防御模式
+# 此计分板添加在了tick中，以便于触发后再激活
+# scoreboard objectives add tidedcore_check_hp_defend trigger
+
+# 若狂暴开始3秒后小于100血，则触发台词
+# scoreboard objectives add tidedcore_check_hp_delete trigger
