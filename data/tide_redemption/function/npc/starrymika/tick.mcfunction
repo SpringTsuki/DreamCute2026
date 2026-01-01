@@ -1,3 +1,20 @@
+# 触发暂离对话
+execute as @e[tag=tided_npc_starrymika_armor] at @s as @a[distance=3..] if score @s tided_npc_starrymika_chat matches 1.. if score #user tided_npc_springaurora_stage matches ..3 run tellraw @s {"translate":"game.npc.name.starrymika.bye1"}
+
+# 检测玩家距离NPC的距离
+execute as @e[tag=tided_npc_starrymika_armor] at @s as @a[distance=..3] run scoreboard players add @s tided_npc_starrymika_chat 1
+execute as @e[tag=tided_npc_starrymika_armor] at @s as @a[distance=..3] run scoreboard players enable @s tided_npc_starrymika_trigger
+execute as @e[tag=tided_npc_starrymika_armor] at @s as @a[distance=3..] run scoreboard players set @s tided_npc_starrymika_chat 0
+
+# 最终决战对话
+execute as @a at @s if score @s tided_npc_starrymika_chat matches 2 if score #user tided_npc_springaurora_stage matches 3 run tellraw @s {"translate":"game.npc.name.starrymika.final.1"}
+execute as @a at @s if score @s tided_npc_starrymika_chat matches 40 if score #user tided_npc_springaurora_stage matches 3 run tellraw @s {"translate":"game.npc.name.starrymika.final.2"}
+
+execute as @a at @s if score @s tided_npc_starrymika_chat matches 2 if score #user tided_npc_springaurora_stage matches 4 run tellraw @s {"translate":"game.main.ed.end.starrymika.1"}
+execute as @a at @s if score @s tided_npc_starrymika_chat matches 40 if score #user tided_npc_springaurora_stage matches 4 run tellraw @s {"translate":"game.main.ed.end.starrymika.2"}
+
+execute if score #user tided_npc_springaurora_stage matches 3..4 run return 0
+
 # 仅触发一次的剧情介绍
 execute as @e[tag=tided_npc_starrymika_once] at @s if entity @a[distance=..3] run function tide_redemption:npc/starrymika/init_chat
 execute as @e[tag=tided_npc_starrymika_once] at @s if entity @a[distance=..3] run kill @e[tag=tided_npc_starrymika_once]
@@ -22,7 +39,7 @@ execute if score #user tided_npc_starrymika_once matches 352 run scoreboard obje
 execute if score #user tided_npc_starrymika_once matches 352 run data modify entity @e[tag=tided_npc_starrymika,tag=!tided_npc_starrymika_once,limit=1] CustomNameVisible set value true
 
 # 触发后续对话
-execute as @a at @s if score @s tided_npc_starrymika_chat matches 1 run tellraw @s {"translate":"game.npc.name.starrymika.welcome1"}
+execute as @a at @s if score @s tided_npc_starrymika_chat matches 2 run tellraw @s {"translate":"game.npc.name.starrymika.welcome1"}
 execute as @a at @s if score @s tided_npc_starrymika_chat matches 20 run tellraw @s {"translate":"game.npc.name.starrymika.welcome2"}
 execute as @a at @s if score @s tided_npc_starrymika_chat matches 25 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.starrymika.question1"}],"clickEvent":{"action": "run_command","value": "/trigger tided_npc_starrymika_trigger set 1"}}
 execute as @a at @s if score @s tided_npc_starrymika_chat matches 30 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.starrymika.question2"}],"clickEvent":{"action": "run_command","value": "/trigger tided_npc_starrymika_trigger set 2"}}
@@ -39,11 +56,3 @@ execute as @a at @s if score @s tided_npc_starrymika_trigger matches 2 run tellr
 
 # 后续对话初始化
 execute as @a at @s if score @s tided_npc_starrymika_trigger matches 0.. run scoreboard players set @s tided_npc_starrymika_trigger 0
-
-# 触发暂离对话
-execute as @e[tag=tided_npc_starrymika_armor] at @s as @a[distance=3..] if score @s tided_npc_starrymika_chat matches 1.. run tellraw @s {"translate":"game.npc.name.starrymika.bye1"}
-
-# 检测玩家距离NPC的距离
-execute as @e[tag=tided_npc_starrymika_armor] at @s as @a[distance=..3] run scoreboard players add @s tided_npc_starrymika_chat 1
-execute as @e[tag=tided_npc_starrymika_armor] at @s as @a[distance=..3] run scoreboard players enable @s tided_npc_starrymika_trigger
-execute as @e[tag=tided_npc_starrymika_armor] at @s as @a[distance=3..] run scoreboard players set @s tided_npc_starrymika_chat 0

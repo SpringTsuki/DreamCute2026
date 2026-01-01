@@ -1,0 +1,28 @@
+{
+    "type": "chest",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:air",
+            "weight": 999
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:barrier",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "custom_data":{"tag":"rng.rotten_flesh"}
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

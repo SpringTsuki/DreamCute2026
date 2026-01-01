@@ -1,0 +1,202 @@
+{
+    "type": "minecraft:chest",
+    "pools": [
+      {
+        "rolls": 27,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:air",
+            "weight": 150
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:rotten_flesh",
+            "weight": 30,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 2.0,
+                  "max": 4.0
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_name": "{\"translate\": \"game.item.resource.material\"}",
+                  "minecraft:lore": [
+                    "{\"translate\": \"game.item.resource.material_lore1\"}",
+                    "{\"text\": \"\"}",
+                    "{\"translate\": \"game.item.resource.material_lore2\"}",
+                    "{\"translate\": \"game.item.resource.material_lore3\"}",
+                    "{\"translate\": \"game.item.resource.material_lore4\"}"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:cobblestone",
+            "weight": 300,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 1.0,
+                  "max": 3.0
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_name": "{\"translate\": \"game.item.resource.cobblestone\"}",
+                  "minecraft:lore": [
+                    "{\"translate\": \"game.item.resource.cobblestone_lore1\"}"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_ingot",
+            "weight": 200,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 1.0,
+                  "max": 2.0
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_name": "{\"translate\": \"game.item.resource.iron_ingot\"}",
+                  "minecraft:lore": [
+                    "{\"translate\": \"game.item.resource.iron_ingot_lore1\"}"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:diamond",
+            "weight": 50,
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": 1
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_name": "{\"translate\": \"game.item.resource.diamond\"}",
+                  "minecraft:lore": [
+                    "{\"translate\": \"game.item.resource.diamond_lore1\"}"
+                  ],
+                  "minecraft:rarity": "rare"
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:nether_star",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:rarity": "epic",
+                  "minecraft:custom_name": "{\"translate\": \"game.secret.core.yuukiriko\"}",
+                  "minecraft:lore": [
+                    "{\"translate\": \"game.secret.core.yuukiriko_lore1\"}",
+                    "{\"translate\": \"game.secret.core.yuukiriko_lore2\"}"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:nether_star",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:rarity": "epic",
+                  "minecraft:custom_name": "{\"translate\": \"game.secret.core.starrymika\"}",
+                  "minecraft:lore": [
+                    "{\"translate\": \"game.secret.core.starrymika_lore1\"}",
+                    "{\"translate\": \"game.secret.core.starrymika_lore2\"}"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:nether_star",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:rarity": "epic",
+                  "minecraft:custom_name": "{\"translate\": \"game.secret.core.castorvow\"}",
+                  "minecraft:lore": [
+                    "{\"translate\": \"game.secret.core.castorvow_lore1\"}",
+                    "{\"translate\": \"game.secret.core.castorvow_lore2\"}"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:nether_star",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:rarity": "epic",
+                  "minecraft:custom_name": "{\"translate\": \"game.secret.core.yuanye\"}",
+                  "minecraft:lore": [
+                    "{\"translate\": \"game.secret.core.yuanye_lore1\"}",
+                    "{\"translate\": \"game.secret.core.yuanye_lore2\"}"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:nether_star",
+            "weight": 1,
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:rarity": "epic",
+                  "minecraft:custom_name": "{\"translate\": \"game.secret.core.springaurora\"}",
+                  "minecraft:lore": [
+                    "{\"translate\": \"game.secret.core.springaurora_lore1\"}",
+                    "{\"translate\": \"game.secret.core.springaurora_lore2\"}"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

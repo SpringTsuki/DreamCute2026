@@ -1,0 +1,2 @@
+scoreboard objectives remove tidedcore_logcheck
+scoreboard objectives remove tidedcore_log

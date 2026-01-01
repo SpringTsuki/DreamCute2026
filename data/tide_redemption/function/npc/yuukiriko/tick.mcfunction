@@ -1,8 +1,26 @@
+# 触发暂离对话
+execute as @e[tag=tided_npc_yuukiriko_armor] at @s as @a[distance=3..] if score @s npc_yuukiriko_chat matches 1.. if score #user tided_npc_springaurora_stage matches ..3 run tellraw @s {"translate":"game.npc.name.yuukiriko.bye1"}
+
+# 检测玩家距离NPC的距离
+execute as @e[tag=tided_npc_yuukiriko_armor] at @s as @a[distance=..3] run scoreboard players add @s npc_yuukiriko_chat 1
+execute as @e[tag=tided_npc_yuukiriko_armor] at @s as @a[distance=..3] run scoreboard players enable @s npc_yuukiriko_trigger
+execute as @e[tag=tided_npc_yuukiriko_armor] at @s as @a[distance=3..] run scoreboard players set @s npc_yuukiriko_chat 0
+
+# 最终决战对话
+execute as @a at @s if score @s npc_yuukiriko_chat matches 2 if score #user tided_npc_springaurora_stage matches 3 run tellraw @s {"translate":"game.npc.name.yuukiriko.final.1"}
+execute as @a at @s if score @s npc_yuukiriko_chat matches 40 if score #user tided_npc_springaurora_stage matches 3 run tellraw @s {"translate":"game.npc.name.yuukiriko.final.2"}
+
+execute as @a at @s if score @s npc_yuukiriko_chat matches 2 if score #user tided_npc_springaurora_stage matches 4 run tellraw @s {"translate":"game.main.ed.end.yuukiriko.1"}
+execute as @a at @s if score @s npc_yuukiriko_chat matches 40 if score #user tided_npc_springaurora_stage matches 4 run tellraw @s {"translate":"game.main.ed.end.yuukiriko.2"}
+
+execute if score #user tided_npc_springaurora_stage matches 3..4 run return 0
+
 # 仅触发一次的剧情介绍
 execute as @e[tag=tided_npc_yuukiriko_once] at @s if entity @a[distance=..3] run function tide_redemption:npc/yuukiriko/init_chat
 execute as @e[tag=tided_npc_yuukiriko_once] at @s if entity @a[distance=..3] run kill @e[tag=tided_npc_yuukiriko_once]
 
 scoreboard players add #user npc_yuukiriko_once 1
+execute if score #user npc_yuukiriko_once matches 2 run spawnpoint @a 996 73 2043
 execute if score #user npc_yuukiriko_once matches 50 run tellraw @a {"translate":"game.npc.name.yuukiriko.chat1"}
 execute if score #user npc_yuukiriko_once matches 100 run tellraw @a {"translate":"game.npc.name.yuukiriko.chat2"}
 execute if score #user npc_yuukiriko_once matches 150 run tellraw @a {"translate":"game.npc.name.yuukiriko.chat3"}
@@ -30,7 +48,7 @@ execute if score #user npc_yuukiriko_once matches 752 run scoreboard objectives 
 execute if score #user npc_yuukiriko_once matches 752 run scoreboard objectives remove npc_yuukiriko_once
 
 # 触发后续对话
-execute as @a at @s if score @s npc_yuukiriko_chat matches 1 run tellraw @s {"translate":"game.npc.name.yuukiriko.welcome1"}
+execute as @a at @s if score @s npc_yuukiriko_chat matches 2 run tellraw @s {"translate":"game.npc.name.yuukiriko.welcome1"}
 execute as @a at @s if score @s npc_yuukiriko_chat matches 20 run tellraw @s {"translate":"game.npc.name.yuukiriko.welcome2"}
 execute as @a at @s if score @s npc_yuukiriko_chat matches 40 run tellraw @s {"translate":"game.npc.name.yuukiriko.welcome3"}
 execute as @a at @s if score @s npc_yuukiriko_chat matches 45 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.yuukiriko.question1"}],"clickEvent":{"action": "run_command","value": "/trigger npc_yuukiriko_trigger set 1"}}
@@ -56,13 +74,5 @@ execute as @a at @s if score @s npc_yuukiriko_trigger matches 3 run tellraw @s {
 
 # 后续对话初始化
 execute as @a at @s if score @s npc_yuukiriko_trigger matches 0.. run scoreboard players set @s npc_yuukiriko_trigger 0
-
-# 触发暂离对话
-execute as @e[tag=tided_npc_yuukiriko_armor] at @s as @a[distance=3..] if score @s npc_yuukiriko_chat matches 1.. run tellraw @s {"translate":"game.npc.name.yuukiriko.bye1"}
-
-# 检测玩家距离NPC的距离
-execute as @e[tag=tided_npc_yuukiriko_armor] at @s as @a[distance=..3] run scoreboard players add @s npc_yuukiriko_chat 1
-execute as @e[tag=tided_npc_yuukiriko_armor] at @s as @a[distance=..3] run scoreboard players enable @s npc_yuukiriko_trigger
-execute as @e[tag=tided_npc_yuukiriko_armor] at @s as @a[distance=3..] run scoreboard players set @s npc_yuukiriko_chat 0
 
 

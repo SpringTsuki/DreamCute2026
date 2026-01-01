@@ -22,6 +22,7 @@ execute if score #user game_start matches 320 run title @a actionbar {"translate
 
 execute if score #user game_start matches 400 run bossbar remove tided_game_start
 execute if score #user game_start matches 400 run function tide_redemption:bgm/game_init
+execute if score #user game_start matches 400 run function tide_redemption:main/stage_1/init
 execute if score #user game_start matches 400 run tellraw @a {"text":"","extra":[{"translate":"game.start.tellraw.1"}]}
 execute if score #user game_start matches 480 run tellraw @a {"text":"","extra":[{"translate":"game.start.tellraw.2"}]}
 execute if score #user game_start matches 560 run tellraw @a {"text":"","extra":[{"translate":"game.start.tellraw.3"}]}

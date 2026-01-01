@@ -1,0 +1,4 @@
+execute store result score @s tided_monster_count run execute if entity @e[tag=tided_monster,distance=..20]
+execute if score @s tided_monster_count matches ..9 run summon minecraft:wither_skeleton ~ ~ ~ {HandDropChances:[0f,0f],ArmorDropChances:[0f,0f,0f,0f],CustomNameVisible:true,CanPickUpLoot:false,Tags:["tided_monster","tided_monster.south","tided_monster.f_wither_skeleton"],CustomName:'{"translate":"game.monster.f_wither_skeleton"}',DeathLootTable:"tide_redemption:monster/south/f_wither_skeleton",HandItems:[{id:"minecraft:stone_sword",count:1b, components:{enchantments:{sharpness:1s}}},{}],ArmorItems:[{},{},{},{}],Health:40,attributes:[{id:"minecraft:generic.max_health",base:40},{id:"minecraft:generic.armor",base:14}]}
+scoreboard players reset @s tided_monster_count
+kill @s

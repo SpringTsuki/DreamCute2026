@@ -4,8 +4,13 @@ tellraw @a {"translate": "game.minigame.guess_block.correct_congrats1"}
 tellraw @a {"translate": "game.minigame.guess_block.correct_congrats2"}
 
 # 根据难度判断播放什么音乐
-execute if score #user minigame_guessblock_difficulty matches 1 run function tide_redemption:bgm/minigame/guess_easy_success
-execute if score #user minigame_guessblock_difficulty matches 2 run function tide_redemption:bgm/minigame/guess_hard_success
+execute if score #user minigame_guessblock_difficulty matches 1 as @a[x=896,y=85,z=2004,dx=-7,dy=3,dz=11] at @s run function tide_redemption:bgm/minigame/guess_easy_success
+execute if score #user minigame_guessblock_difficulty matches 2 as @a[x=896,y=85,z=2004,dx=-7,dy=3,dz=11] at @s run function tide_redemption:bgm/minigame/guess_hard_success
+
+# 根据难度决定奖励列表
+setblock 893 85 2019 minecraft:air
+execute if score #user minigame_guessblock_difficulty matches 1 run setblock 893 85 2019 minecraft:chest[facing=west,type=single,waterlogged=false]{LootTable:"tide_redemption:minigame/minigame_guessblock_easy_reward"}
+execute if score #user minigame_guessblock_difficulty matches 2 run setblock 893 85 2019 minecraft:chest[facing=west,type=single,waterlogged=false]{LootTable:"tide_redemption:minigame/minigame_guessblock_hard_reward"}
 
 # 清除箱子物品
 data merge block 898 88 2010 {Items:[]}

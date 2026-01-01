@@ -16,3 +16,7 @@ function tide_redemption:boss/skill/memory_torrent_dataline/end
 function tide_redemption:boss/skill/memory_torrent_song/end
 
 execute as @a at @s run playsound minecraft:entity.ender_dragon.death master @s ~ ~ ~ 0.2
+
+# ED 只能触发一次
+execute if score #user tided_npc_springaurora_stage matches 4 run return 0
+function tide_redemption:main/ed/init

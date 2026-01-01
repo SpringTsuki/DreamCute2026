@@ -4,7 +4,7 @@ execute store result bossbar minecraft:memory_forever_frozen value run scoreboar
 execute as @e[tag=memory_forever_frozen] at @s run function tide_redemption:boss/lib/end/memory_forever_frozen
 execute as @e[tag=memory_forever_frozen] at @s run tp @s ~ ~ ~ ~0.5 ~
 
-execute if score #user memory_forever_frozen matches 200 run give @a enchanted_golden_apple 1
+execute if score #user memory_forever_frozen matches 200 run give @a[x=924,y=145,z=2043,dx=25,dy=7,dz=-25] enchanted_golden_apple 1
 execute if score #user memory_forever_frozen matches 320 run function tide_redemption:boss/skill/memory_forever_frozen/check
 execute if score #user memory_forever_frozen matches 321 run function tide_redemption:boss/skill/memory_forever_frozen/end
 

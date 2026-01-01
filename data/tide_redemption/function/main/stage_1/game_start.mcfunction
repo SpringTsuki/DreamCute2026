@@ -11,7 +11,3 @@ bossbar add minecraft:tided_game_start {"color":"yellow","text":"「游戏开始
 bossbar set minecraft:tided_game_start color yellow
 bossbar set minecraft:tided_game_start max 400
 bossbar set minecraft:tided_game_start players @a
-
-# 全局NPC重置（测试用）
-function tide_redemption:npc/init
-

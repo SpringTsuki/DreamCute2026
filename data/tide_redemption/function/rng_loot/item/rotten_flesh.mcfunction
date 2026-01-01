@@ -1,0 +1,2 @@
+advancement revoke @s only tide_redemption:monster/rng_zombie
+give @s minecraft:rotten_flesh[rarity="epic",custom_name='{"translate":"game.rngloot.rotten_flesh"}',lore=['{"translate":"game.rngloot.rotten_flesh_lore1"}','{"translate":"game.rngloot.rotten_flesh_lore2"}','{"translate":"game.rngloot.rotten_flesh_lore3"}'],food={can_always_eat:true,nutrition:6,saturation:10.0}]

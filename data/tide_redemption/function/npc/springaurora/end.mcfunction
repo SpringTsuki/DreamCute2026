@@ -1,0 +1,5 @@
+scoreboard objectives remove tided_npc_springaurora_once
+scoreboard objectives remove tided_npc_springaurora_stage
+scoreboard objectives remove tided_npc_springaurora_chat
+scoreboard objectives remove tided_npc_springaurora_trigger
+scoreboard objectives remove tided_npc_springaurora_lastmission

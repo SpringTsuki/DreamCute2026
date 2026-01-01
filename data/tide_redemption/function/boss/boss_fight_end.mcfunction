@@ -14,5 +14,7 @@ scoreboard objectives remove tidedcore_fight
 scoreboard objectives remove tidedcore_random
 scoreboard objectives remove tidedcore_check_hp_defend
 scoreboard objectives remove tidedcore_check_hp_delete
+scoreboard objectives remove tidedcore_fight_player
+scoreboard objectives remove tidedcore_minhp
 
 # function tide_redemption:boss/boss_fight_end

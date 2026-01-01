@@ -1,0 +1,88 @@
+{
+    "type": "entity",
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:nether_star",
+            "weight": 5,
+            "functions": [{
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": "{\"translate\": \"game.secret.core.error\"}",
+                "minecraft:lore": ["{\"translate\": \"game.secret.core.error_lore1\"}"]
+              }
+            }]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:nether_star",
+            "weight": 1,
+            "functions": [{
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": "{\"translate\": \"game.secret.core.yuukiriko\"}",
+                "minecraft:lore": ["{\"translate\": \"game.secret.core.yuukiriko_lore1\"}", "{\"translate\": \"game.secret.core.yuukiriko_lore2\"}"]
+              }
+            }]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:nether_star",
+            "weight": 1,
+            "functions": [{
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": "{\"translate\": \"game.secret.core.starrymika\"}",
+                "minecraft:lore": ["{\"translate\": \"game.secret.core.starrymika_lore1\"}", "{\"translate\": \"game.secret.core.starrymika_lore2\"}"]
+              }
+            }]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:nether_star",
+            "weight": 1,
+            "functions": [{
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": "{\"translate\": \"game.secret.core.castorvow\"}",
+                "minecraft:lore": ["{\"translate\": \"game.secret.core.castorvow_lore1\"}", "{\"translate\": \"game.secret.core.castorvow_lore2\"}"]
+              }
+            }]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:nether_star",
+            "weight": 1,
+            "functions": [{
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": "{\"translate\": \"game.secret.core.yuanye\"}",
+                "minecraft:lore": ["{\"translate\": \"game.secret.core.yuanye_lore1\"}", "{\"translate\": \"game.secret.core.yuanye_lore2\"}"]
+              }
+            }]
+          },
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:nether_star",
+            "weight": 1,
+            "functions": [{
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": "{\"translate\": \"game.secret.core.springaurora\"}",
+                "minecraft:lore": ["{\"translate\": \"game.secret.core.springaurora_lore1\"}", "{\"translate\": \"game.secret.core.springaurora_lore2\"}"]
+              }
+            }]
+          }
+        ]
+      }
+    ]
+  }

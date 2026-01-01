@@ -18,12 +18,3 @@ clear @a
 
 # 全局title特效
 title @a times 1.5s 5s 2.5s
-
-# 全局NPC重置
-function tide_redemption:npc/end
-
-# 怪物生成配置
-function tide_redemption:monster/init
-
-# 全局奖励箱子
-function tide_redemption:chest/init

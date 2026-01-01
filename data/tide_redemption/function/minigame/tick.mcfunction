@@ -1,1 +1,3 @@
 function tide_redemption:minigame/guess_block/tick
+function tide_redemption:minigame/hack_core/tick
+function tide_redemption:minigame/download_core/tick

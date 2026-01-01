@@ -1,2 +1,3 @@
 function tide_redemption:bgm/lyric/bgm_extra_introduciton/tick
 function tide_redemption:bgm/lyric/bgm_boss_tidedcore/tick
+function tide_redemption:bgm/lyric/bgm_dawn/tick

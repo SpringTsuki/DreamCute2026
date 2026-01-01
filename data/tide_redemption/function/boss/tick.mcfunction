@@ -10,8 +10,8 @@ function tide_redemption:boss/skill/memory_forever_frozen/tick
 function tide_redemption:boss/skill/memory_forever_delete/tick
 
 #调试模式
-scoreboard objectives setdisplay sidebar tidedcore_fight
-scoreboard players add SpringAurora tidedcore_fight 1
+# scoreboard objectives setdisplay sidebar tidedcore_fight
+# scoreboard players add SpringAurora tidedcore_fight 1
 
 # 检测玩家是否存活
 execute if score #user tidedcore_fight matches 1..5580 run function tide_redemption:boss/boss_check_player
@@ -20,8 +20,7 @@ execute if score #user tidedcore_fight matches 1..5580 run function tide_redempt
 scoreboard players add #user tidedcore_fight 1
 
 # 随机数
-scoreboard players add #user tidedcore_random 1
-execute if score #user tidedcore_random matches 2.. run scoreboard players set #user tidedcore_random 0
+scoreboard players set #user tidedcore_random 0
 
 # BOSS血量增长恢复
 execute if score #user tidedcore_fight matches 1..359 run scoreboard players add #tidedcore tidedcore_hp 3
@@ -106,7 +105,7 @@ execute if score #user tidedcore_fight matches 3050 run function tide_redemption
 execute if score #user tidedcore_fight matches 3260 run function tide_redemption:boss/skill/memory_torrent_dataline/init
 
 # 第二次分散或分摊
-execute if score #user tidedcore_fight matches 3520 if score #user tidedcore_random matches 0 run function tide_redemption:boss/skill/memory_cut_shard/init
+execute if score #user tidedcore_fight matches 3520 run function tide_redemption:boss/boss_random
 execute if score #user tidedcore_fight matches 3520 if score #user tidedcore_random matches 1 run function tide_redemption:boss/skill/memory_cut_shard/init
 execute if score #user tidedcore_fight matches 3520 if score #user tidedcore_random matches 2 run function tide_redemption:boss/skill/memory_cut_module/init
 
@@ -114,28 +113,28 @@ execute if score #user tidedcore_fight matches 3520 if score #user tidedcore_ran
 execute if score #user tidedcore_fight matches 3820 run function tide_redemption:boss/skill/memory_torrent_song/init
 
 # 第二次 钢铁/月环
-execute if score #user tidedcore_fight matches 3940 if score #user tidedcore_random matches 0 run function tide_redemption:boss/skill/memory_forget_near/init
+execute if score #user tidedcore_fight matches 3940 run function tide_redemption:boss/boss_random
 execute if score #user tidedcore_fight matches 3940 if score #user tidedcore_random matches 1 run function tide_redemption:boss/skill/memory_forget_far/init
 execute if score #user tidedcore_fight matches 3940 if score #user tidedcore_random matches 2 run function tide_redemption:boss/skill/memory_forget_near/init
 
 # 第二次 钢铁/月环 分散/分摊
-execute if score #user tidedcore_fight matches 4270 if score #user tidedcore_random matches 0 run function tide_redemption:boss/skill/memory_forget_near/init
+execute if score #user tidedcore_fight matches 4270 run function tide_redemption:boss/boss_random
 execute if score #user tidedcore_fight matches 4270 if score #user tidedcore_random matches 1 run function tide_redemption:boss/skill/memory_forget_far/init
 execute if score #user tidedcore_fight matches 4270 if score #user tidedcore_random matches 2 run function tide_redemption:boss/skill/memory_forget_near/init
 
-execute if score #user tidedcore_fight matches 4250 if score #user tidedcore_random matches 0 run function tide_redemption:boss/skill/memory_cut_shard/init
+execute if score #user tidedcore_fight matches 4250 run function tide_redemption:boss/boss_random
 execute if score #user tidedcore_fight matches 4250 if score #user tidedcore_random matches 1 run function tide_redemption:boss/skill/memory_cut_module/init
 execute if score #user tidedcore_fight matches 4250 if score #user tidedcore_random matches 2 run function tide_redemption:boss/skill/memory_cut_shard/init
 
 # 第三次地火
 execute if score #user tidedcore_fight matches 4500 run function tide_redemption:boss/skill/memory_torrent_dataline/init
 
-# 固定地火内钢铁
+# 固定地火内钢铁月环
 execute if score #user tidedcore_fight matches 4520 run function tide_redemption:boss/skill/memory_forget_near/init
 execute if score #user tidedcore_fight matches 4640 run function tide_redemption:boss/skill/memory_forget_far/init
 
 # 插入一个 分散/分摊
-execute if score #user tidedcore_fight matches 4760 if score #user tidedcore_random matches 0 run function tide_redemption:boss/skill/memory_cut_shard/init
+execute if score #user tidedcore_fight matches 4760 run function tide_redemption:boss/boss_random
 execute if score #user tidedcore_fight matches 4760 if score #user tidedcore_random matches 1 run function tide_redemption:boss/skill/memory_cut_module/init
 execute if score #user tidedcore_fight matches 4760 if score #user tidedcore_random matches 2 run function tide_redemption:boss/skill/memory_cut_shard/init
 

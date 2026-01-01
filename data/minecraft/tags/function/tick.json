@@ -7,6 +7,8 @@
         "tide_redemption:main/tick",
         "tide_redemption:boss/tick",
         "tide_redemption:monster/tick",
-        "tide_redemption:minigame/guess_block/tick"
+        "tide_redemption:minigame/tick",
+        "tide_redemption:rng_loot/tick",
+        "firefly:tick"
     ]
 }

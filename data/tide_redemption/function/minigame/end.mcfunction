@@ -1,0 +1,3 @@
+function tide_redemption:minigame/guess_block/end
+function tide_redemption:minigame/hack_core/end
+function tide_redemption:minigame/download_core/end

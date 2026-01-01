@@ -1,0 +1,4 @@
+execute store result score @s tided_monster_count run execute if entity @e[tag=tided_monster,distance=..20]
+execute if score @s tided_monster_count matches ..2 run summon minecraft:vindicator ~ ~1 ~ {HandDropChances:[0f,0f],ArmorDropChances:[0f,0f,0f,0f],CustomNameVisible:true,CanPickUpLoot:false,Tags:["tided_monster","tided_monster.south","tided_monster.special_pillager"],CustomName:'{"translate":"game.monster.special_pillager"}',DeathLootTable:"tide_redemption:monster/south/special_pillager",HandItems:[{id:"minecraft:iron_axe",count:1b,components:{enchantments:{sharpness:1s}}},{}],ArmorItems:[{},{},{},{}],Health:60,attributes:[{id:"minecraft:generic.max_health",base:60},{id:"minecraft:generic.armor",base:20}]}
+scoreboard players reset @s tided_monster_count
+kill @s

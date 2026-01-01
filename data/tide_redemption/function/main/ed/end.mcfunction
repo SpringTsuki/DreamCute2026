@@ -1,0 +1,1 @@
+scoreboard objectives remove game_main_end

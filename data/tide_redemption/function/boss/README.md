@@ -13,7 +13,7 @@ memory_forever_frozen： 记忆损伤 · 永恒冻结
 大AOE技能，需要在读条完毕前服用附魔金苹果以存活！
 
 memory_forget_far： 记忆遗忘 · 远
-为需要靠近的月环
+为需要靠近的月环v
 memory_forget_near： 记忆遗忘 · 近
 为需要远离的钢铁
 

@@ -1,0 +1,1 @@
+scoreboard objectives add tided_npc_yuanye_tip trigger

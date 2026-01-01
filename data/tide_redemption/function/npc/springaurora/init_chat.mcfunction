@@ -1,0 +1,2 @@
+# 仅触发一次的剧情介绍
+scoreboard objectives add tided_npc_springaurora_once trigger

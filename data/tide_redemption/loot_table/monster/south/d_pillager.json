@@ -1,0 +1,258 @@
+{
+    "type": "entity",
+    "pools": [
+      {
+        "rolls": {
+          "min": 2.0,
+          "max": 5.0
+        },
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bone",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_name": "{\"translate\": \"game.item.resource.bone\"}",
+                  "minecraft:lore": [
+                    "{\"translate\": \"game.item.resource.bone_lore1\"}"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": {
+          "min": 0.0,
+          "max": 2.0
+        },
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_ingot",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_name": "{\"translate\": \"game.item.resource.iron_ingot\"}",
+                  "minecraft:lore": [
+                    "{\"translate\": \"game.item.resource.iron_ingot_lore1\"}"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": {
+          "min": 0.0,
+          "max": 3.0
+        },
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:cobblestone",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_name": "{\"translate\": \"game.item.resource.cobblestone\"}",
+                  "minecraft:lore": [
+                    "{\"translate\": \"game.item.resource.cobblestone_lore1\"}"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": {
+          "min": 0.0,
+          "max": 4.0
+        },
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:rotten_flesh",
+            "functions": [
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_name": "{\"translate\": \"game.item.resource.material\"}",
+                  "minecraft:lore": [
+                    "{\"translate\": \"game.item.resource.material_lore1\"}",
+                    "{\"text\": \"\"}",
+                    "{\"translate\": \"game.item.resource.material_lore2\"}",
+                    "{\"translate\": \"game.item.resource.material_lore3\"}",
+                    "{\"translate\": \"game.item.resource.material_lore4\"}"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "conditions": [
+          {
+            "condition": "minecraft:random_chance_with_enchanted_bonus",
+            "enchantment": "minecraft:looting",
+            "enchanted_chance": {
+              "type": "minecraft:linear",
+              "base": 0.25,
+              "per_level_above_first": 0.1
+            },
+            "unenchanted_chance": 0.0
+          }
+        ],
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:bone",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 0,
+                  "max": 5
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_name": "{\"translate\": \"game.item.resource.bone\"}",
+                  "minecraft:lore": [
+                    "{\"translate\": \"game.item.resource.bone_lore1\"}"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "conditions": [
+          {
+            "condition": "minecraft:random_chance_with_enchanted_bonus",
+            "enchantment": "minecraft:looting",
+            "enchanted_chance": {
+              "type": "minecraft:linear",
+              "base": 0.15,
+              "per_level_above_first": 0.05
+            },
+            "unenchanted_chance": 0.0
+          }
+        ],
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:cobblestone",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 0,
+                  "max": 2
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_name": "{\"translate\": \"game.item.resource.cobblestone\"}",
+                  "minecraft:lore": [
+                    "{\"translate\": \"game.item.resource.cobblestone_lore1\"}"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "conditions": [
+          {
+            "condition": "minecraft:random_chance_with_enchanted_bonus",
+            "enchantment": "minecraft:looting",
+            "enchanted_chance": {
+              "type": "minecraft:linear",
+              "base": 0.1,
+              "per_level_above_first": 0.05
+            },
+            "unenchanted_chance": 0.0
+          }
+        ],
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:iron_ingot",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 0,
+                  "max": 2
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_name": "{\"translate\": \"game.item.resource.iron_ingot\"}",
+                  "minecraft:lore": [
+                    "{\"translate\": \"game.item.resource.iron_ingot_lore1\"}"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "conditions": [
+          {
+            "condition": "minecraft:random_chance_with_enchanted_bonus",
+            "enchantment": "minecraft:looting",
+            "enchanted_chance": {
+              "type": "minecraft:linear",
+              "base": 0.1,
+              "per_level_above_first": 0.05
+            },
+            "unenchanted_chance": 0.05
+          }
+        ],
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:diamond",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "min": 0,
+                  "max": 1
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "minecraft:custom_name": "{\"translate\": \"game.item.resource.diamond\"}",
+                  "minecraft:lore": [
+                    "{\"translate\": \"game.item.resource.diamond_lore1\"}"
+                  ],
+                  "minecraft:rarity": "rare"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

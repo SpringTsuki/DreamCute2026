@@ -18,7 +18,7 @@ loot insert 898 88 2010 loot tide_redemption:minigame/minigame_guessblock_easy
 scoreboard players set #user minigame_guessblock_difficulty 1
 
 # 告知玩家初始化完成
-function tide_redemption:bgm/minigame/guess_easy_start
+execute as @a[x=896,y=85,z=2004,dx=-7,dy=3,dz=11] at @s run function tide_redemption:bgm/minigame/guess_easy_start
 tellraw @a {"translate":"game.minigame.guess_block.init"}
 execute as @a[x=896,y=85,z=2004,dx=-7,dy=3,dz=11] at @s run title @s title {"translate":"game.minigame.guess_block.game_start"}
 
