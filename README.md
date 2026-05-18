@@ -17,3 +17,10 @@
 
 = = = = =
 活动已结束，项目已归档完毕。
+
+我要如何本地游玩？
+```
+# 下载代码文件，将其移动至地图内
+git clone https://github.com/SpringTsuki/DreamCute2026
+# 下载 release 中的资源包与地图，将其解压。
+# 其中，mca 文件为 chunk 文件，将其其中至存档的 region 内，将资源包文件添加后即可游玩。
