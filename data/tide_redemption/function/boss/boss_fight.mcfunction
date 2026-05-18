@@ -1,4 +1,8 @@
 stopsound @a
+# 增加检查函数
+scoreboard objectives add bossfight_tidedcore trigger
+scoreboard players set #user bossfight_tidedcore 1
+
 # BOSS生成初始化
 function tide_redemption:boss/skill/boss_spawn/init
 

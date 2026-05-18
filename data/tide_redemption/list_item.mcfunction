@@ -33,6 +33,8 @@ give @p minecraft:blaze_powder[custom_name='{"translate":"game.item.resource.bla
 # 实验用骸骨（怪物掉落）【增益用药水】
 give @p minecraft:bone[custom_name='{"translate":"game.item.resource.bone"}',lore=['{"translate":"game.item.resource.bone_lore1"}']]
 
+# 远程对讲机
+give @p minecraft:spyglass[custom_name='{"translate":"game.item.tools.chat"}',lore=['{"translate":"game.item.tools.chat_lore1"}','{"translate":"game.item.tools.chat_lore2"}']]
 
 # 1. 小夸的商店
 

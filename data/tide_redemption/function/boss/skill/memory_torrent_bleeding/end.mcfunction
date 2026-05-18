@@ -1,5 +1,8 @@
 scoreboard objectives remove memory_torrent_bleeding
 
+bossbar remove memory_torrent_bleeding
+function tide_redemption:boss/skill/memory_torrent_bleeding/remove_tag
+
 kill @e[tag=memory_torrent_bleeding.armor_boss]
 kill @e[tag=memory_torrent_bleeding.armor_dust]
 # 地面旋转粒子特效结束

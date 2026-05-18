@@ -1,0 +1,1 @@
+tp @e[tag=tidedcore] 937 150 2031

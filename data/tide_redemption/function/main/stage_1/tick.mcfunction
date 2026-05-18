@@ -20,6 +20,14 @@ execute if score #user game_start matches 320 run title @a title {"text":""}
 execute if score #user game_start matches 320 run title @a subtitle {"translate":"game.start.alarm.title"}
 execute if score #user game_start matches 320 run title @a actionbar {"translate":"game.start.alarm.subtitle"}
 
+execute if score #user game_start matches 40 run tellraw @a {"translate": "game.rule.1"}
+execute if score #user game_start matches 80 run tellraw @a {"translate": "game.rule.2"}
+execute if score #user game_start matches 120 run tellraw @a {"translate": "game.rule.3"}
+execute if score #user game_start matches 160 run tellraw @a {"translate": "game.rule.4"}
+execute if score #user game_start matches 200 run tellraw @a {"translate": "game.rule.5"}
+execute if score #user game_start matches 240 run tellraw @a {"translate": "game.rule.6"}
+execute if score #user game_start matches 280 run tellraw @a {"translate": "game.rule.7"}
+
 execute if score #user game_start matches 400 run bossbar remove tided_game_start
 execute if score #user game_start matches 400 run function tide_redemption:bgm/game_init
 execute if score #user game_start matches 400 run function tide_redemption:main/stage_1/init

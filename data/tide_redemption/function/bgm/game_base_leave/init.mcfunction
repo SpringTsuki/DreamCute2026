@@ -1,0 +1,1 @@
+scoreboard objectives add bgm_leave_base_stage trigger

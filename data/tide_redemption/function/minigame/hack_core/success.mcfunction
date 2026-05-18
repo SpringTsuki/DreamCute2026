@@ -10,3 +10,7 @@ scoreboard objectives add tided_npc_springaurora_lastmission trigger
 
 # 暂时禁用对话
 scoreboard objectives remove tided_npc_springaurora_chat
+
+# 禁用基地音乐
+scoreboard objectives remove bgm_base
+scoreboard objectives remove bgm_leave_base

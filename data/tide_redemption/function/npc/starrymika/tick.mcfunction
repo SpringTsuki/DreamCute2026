@@ -26,17 +26,27 @@ execute if score #user tided_npc_starrymika_once matches 150 run tellraw @a {"tr
 execute if score #user tided_npc_starrymika_once matches 200 run tellraw @a {"translate":"game.npc.name.starrymika.chat4"}
 execute if score #user tided_npc_starrymika_once matches 250 run tellraw @a {"translate":"game.npc.name.starrymika.chat5"}
 execute if score #user tided_npc_starrymika_once matches 300 run tellraw @a {"translate":"game.npc.name.starrymika.chat6"}
-execute if score #user tided_npc_starrymika_once matches 350 run tellraw @a {"translate":"game.npc.name.starrymika.tp1"}
-execute if score #user tided_npc_starrymika_once matches 351 run tp @e[tag=tided_npc_starrymika] 992 73 2042
+execute if score #user tided_npc_starrymika_once matches 350 run tellraw @a {"translate":"game.npc.name.starrymika.chat7"}
+execute if score #user tided_npc_starrymika_once matches 400 run tellraw @a {"translate":"game.npc.name.starrymika.chat8"}
+execute if score #user tided_npc_starrymika_once matches 450 run tellraw @a {"translate":"game.npc.name.starrymika.chat9"}
+execute if score #user tided_npc_starrymika_once matches 500 run tellraw @a {"translate":"game.npc.name.starrymika.chat10"}
+execute if score #user tided_npc_starrymika_once matches 550 run tellraw @a {"translate":"game.npc.name.starrymika.tp1"}
+execute if score #user tided_npc_starrymika_once matches 551 run tp @e[tag=tided_npc_starrymika] 992 73 2042
 
 # 后续对话计分板初始化
-execute if score #user tided_npc_starrymika_once matches 352 run scoreboard objectives add tided_npc_starrymika_chat trigger
+execute if score #user tided_npc_starrymika_once matches 552 run scoreboard objectives add tided_npc_starrymika_chat trigger
 
 # 后续对话问题计分板初始化
-execute if score #user tided_npc_starrymika_once matches 352 run scoreboard objectives add tided_npc_starrymika_trigger trigger
+execute if score #user tided_npc_starrymika_once matches 552 run scoreboard objectives add tided_npc_starrymika_trigger trigger
+
+# 音乐阶段更改
+execute if score #user tided_npc_starrymika_once matches 552 run scoreboard players set #user bgm_leave_base_stage 1
+
+# 回收once计分板
+execute if score #user tided_npc_starrymika_once matches 552 run scoreboard objectives remove tided_npc_starrymika_once
 
 # 盔甲架显示名称
-execute if score #user tided_npc_starrymika_once matches 352 run data modify entity @e[tag=tided_npc_starrymika,tag=!tided_npc_starrymika_once,limit=1] CustomNameVisible set value true
+execute if score #user tided_npc_starrymika_once matches 552 run data modify entity @e[tag=tided_npc_starrymika,tag=!tided_npc_starrymika_once,limit=1] CustomNameVisible set value true
 
 # 触发后续对话
 execute as @a at @s if score @s tided_npc_starrymika_chat matches 2 run tellraw @s {"translate":"game.npc.name.starrymika.welcome1"}

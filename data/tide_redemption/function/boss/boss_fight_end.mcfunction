@@ -1,4 +1,4 @@
-kill @e[tag=tidedcore]
+tp @e[tag=tidedcore] ~ -255 ~
 
 function tide_redemption:boss/skill/boss_spawn/end
 function tide_redemption:bgm/lyric/bgm_boss_tidedcore/end
@@ -18,3 +18,7 @@ scoreboard objectives remove tidedcore_fight_player
 scoreboard objectives remove tidedcore_minhp
 
 # function tide_redemption:boss/boss_fight_end
+
+# 重置检查函数
+scoreboard players set #user bossfight_tidedcore 0
+

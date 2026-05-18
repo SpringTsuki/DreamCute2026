@@ -25,7 +25,7 @@ execute as @r[x=924,y=145,z=2043,dx=25,dy=7,dz=-25,tag=!memory_cut_shard_A,tag=!
 execute as @r[x=924,y=145,z=2043,dx=25,dy=7,dz=-25,tag=!memory_cut_shard_A,tag=!memory_cut_shard_B,tag=!memory_cut_shard_C] at @s run tag @s add memory_cut_shard_D
 
 # 添加旋转粒子特效
-execute as @e[tag=memory_cut_shard_A] at @s run summon armor_stand ~ ~1 ~ {Tags:[memory_cut_shard.armor_dustA,memory_cut_shard.armor_dust],Invisible:true,NoGravity:true}
-execute as @e[tag=memory_cut_shard_B] at @s run summon armor_stand ~ ~1 ~ {Tags:[memory_cut_shard.armor_dustB,memory_cut_shard.armor_dust],Invisible:true,NoGravity:true}
-execute as @e[tag=memory_cut_shard_C] at @s run summon armor_stand ~ ~1 ~ {Tags:[memory_cut_shard.armor_dustC,memory_cut_shard.armor_dust],Invisible:true,NoGravity:true}
-execute as @e[tag=memory_cut_shard_D] at @s run summon armor_stand ~ ~1 ~ {Tags:[memory_cut_shard.armor_dustD,memory_cut_shard.armor_dust],Invisible:true,NoGravity:true}
+execute as @e[tag=memory_cut_shard_A] at @s run summon armor_stand ~ ~3 ~ {Tags:[memory_cut_shard.armor_dustA,memory_cut_shard.armor_dust],Invisible:true,NoGravity:true}
+execute as @e[tag=memory_cut_shard_B] at @s run summon armor_stand ~ ~3 ~ {Tags:[memory_cut_shard.armor_dustB,memory_cut_shard.armor_dust],Invisible:true,NoGravity:true}
+execute as @e[tag=memory_cut_shard_C] at @s run summon armor_stand ~ ~3 ~ {Tags:[memory_cut_shard.armor_dustC,memory_cut_shard.armor_dust],Invisible:true,NoGravity:true}
+execute as @e[tag=memory_cut_shard_D] at @s run summon armor_stand ~ ~3 ~ {Tags:[memory_cut_shard.armor_dustD,memory_cut_shard.armor_dust],Invisible:true,NoGravity:true}

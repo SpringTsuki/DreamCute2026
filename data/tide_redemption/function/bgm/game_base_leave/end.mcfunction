@@ -1,0 +1,1 @@
+scoreboard objectives remove bgm_leave_base_stage

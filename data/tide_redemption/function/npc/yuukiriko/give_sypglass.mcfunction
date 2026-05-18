@@ -1,0 +1,2 @@
+clear @s minecraft:spyglass[custom_name='{"translate":"game.item.tools.chat"}',lore=['{"translate":"game.item.tools.chat_lore1"}','{"translate":"game.item.tools.chat_lore2"}']]
+give @p minecraft:spyglass[custom_name='{"translate":"game.item.tools.chat"}',lore=['{"translate":"game.item.tools.chat_lore1"}','{"translate":"game.item.tools.chat_lore2"}']]

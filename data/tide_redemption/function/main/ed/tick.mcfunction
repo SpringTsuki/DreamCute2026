@@ -24,7 +24,7 @@ execute if score #user game_main_end matches 400 run function tide_redemption:ma
 # ED播报
 execute if score #user game_main_end matches 400 run effect give @a minecraft:blindness 5 1
 execute if score #user game_main_end matches 400 run effect give @a minecraft:slowness 5 10
-execute if score #user game_main_end matches 420 run tp @a 979 95 2109 -90 0
+execute if score #user game_main_end matches 420 run tp @a 979 95 2106 -90 0
 execute if score #user game_main_end matches 420 run weather clear
 
 execute if score #user game_main_end matches 460 run function tide_redemption:bgm/game_end
@@ -111,8 +111,8 @@ execute if score #user game_main_end matches 3420 run tellraw @a {"translate":"g
 execute if score #user game_main_end matches 3460 run tellraw @a {"translate":"game.main.ed.end.2"}
 execute if score #user game_main_end matches 3500 run tellraw @a {"translate":"game.main.ed.end.3"}
 execute if score #user game_main_end matches 3540 run tellraw @a {"translate":"game.main.ed.end.4"}
-execute if score #user game_main_end matches 3580 run tellraw @a {"translate":"game.main.ed.end.5"}
-execute if score #user game_main_end matches 3620 run tellraw @a {"translate":"game.main.ed.end.6"}
+execute if score #user game_main_end matches 3580 run tellraw @a {"translate":"game.main.ed.end.5","clickEvent":{"action":"open_url","value":"https://t1.kugou.com/Pvb94eFXV3"}}
+execute if score #user game_main_end matches 3620 run tellraw @a {"translate":"game.main.ed.end.6","clickEvent":{"action":"open_url","value":"https://music.163.com/playlist?id=17633792611&uct2=U2FsdGVkX19ZVVGZCo3JU9DMiv81EhcmEXho99GiJo4="}}
 execute if score #user game_main_end matches 3660 run tellraw @a {"translate":"game.main.ed.end.7"}
 execute if score #user game_main_end matches 3740 run tellraw @a {"translate":"game.main.ed.end.8"}
 execute if score #user game_main_end matches 3780 run tellraw @a {"translate":"game.main.ed.end.9"}
@@ -128,6 +128,5 @@ execute if score #user game_main_end matches 4000 run scoreboard objectives add 
 execute if score #user game_main_end matches 4000 run scoreboard objectives add tided_npc_starrymika_chat trigger
 execute if score #user game_main_end matches 4000 run scoreboard objectives add tided_npc_springaurora_chat trigger
 
-execute if score #user game_main_end matches 4099 run function tide_redemption:main/congra_newyear/init
-execute if score #user game_main_end matches 4099 run difficulty normal
-execute if score #user game_main_end matches 4100 run function tide_redemption:main/ed/end
+execute if score #user game_main_end matches 4150 run function tide_redemption:main/congra_newyear/init
+execute if score #user game_main_end matches 4151 run function tide_redemption:main/ed/end

@@ -39,10 +39,12 @@ execute if score #user tided_npc_yuanye_tip matches 550 run tellraw @a {"transla
 execute if score #user tided_npc_yuanye_tip matches 600 run tellraw @a {"translate":"game.npc.name.yuanye.tip12"}
 execute if score #user tided_npc_yuanye_tip matches 650 run tellraw @a {"translate":"game.npc.name.yuanye.tip13"}
 execute if score #user tided_npc_yuanye_tip matches 700 run tellraw @a {"translate":"game.npc.name.yuanye.tip14"}
-execute if score #user tided_npc_yuanye_tip matches 750 run tellraw @a {"translate":"game.npc.name.yuanye.tip15"}
-execute if score #user tided_npc_yuanye_tip matches 800 run scoreboard objectives remove tided_npc_yuanye_tip
 
-# 剧情介绍
+# 更改音乐阶段
+execute if score #user tided_npc_yuanye_tip matches 701 run scoreboard players set #user bgm_leave_base_stage 3
+execute if score #user tided_npc_yuanye_tip matches 702 run scoreboard objectives remove tided_npc_yuanye_tip
+
+# 初次对话
 scoreboard players add #user tided_npc_yuanye_once 1
 execute if score #user tided_npc_yuanye_once matches 50 run tellraw @a {"translate":"game.npc.name.yuanye.chat1"}
 execute if score #user tided_npc_yuanye_once matches 100 run tellraw @a {"translate":"game.npc.name.yuanye.chat2"}
@@ -58,7 +60,9 @@ execute if score #user tided_npc_yuanye_once matches 352 run data modify entity 
 execute if score #user tided_npc_yuanye_once matches 353 run scoreboard objectives add tided_npc_yuanye_chat trigger
 # 后续对话问题计分板初始化
 execute if score #user tided_npc_yuanye_once matches 353 run scoreboard objectives add tided_npc_yuanye_trigger trigger
-
+# 更改音乐阶段
+execute if score #user tided_npc_yuanye_once matches 353 run scoreboard players set #user bgm_leave_base_stage 4
+# 回收once计分板
 execute if score #user tided_npc_yuanye_once matches 354 run scoreboard objectives remove tided_npc_yuanye_once
 
 # 触发后续对话

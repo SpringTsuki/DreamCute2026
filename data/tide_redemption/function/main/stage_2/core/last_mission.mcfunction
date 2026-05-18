@@ -10,3 +10,4 @@ tp @e[tag=tided_npc_yuanye] 941.5 147.00 2066.5
 
 time set midnight
 gamerule doDaylightCycle false
+weather thunder

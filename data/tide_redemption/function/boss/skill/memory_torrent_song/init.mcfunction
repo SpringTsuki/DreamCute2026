@@ -1,9 +1,5 @@
 function tide_redemption:boss/boss_tp
 
-# 测试时需要随机数 | 测试用
-scoreboard objectives add tidedcore_random trigger
-scoreboard players add #user tidedcore_random 1
-
 # 添加技能时间轴
 scoreboard objectives add memory_torrent_song.timeline trigger
 scoreboard players set #user memory_torrent_song.timeline 0
@@ -25,6 +21,7 @@ bossbar set minecraft:memory_torrent_song max 160
 bossbar set minecraft:memory_torrent_song players @a
 
 # 随机数判断正点/斜点塔
-execute if score #user tidedcore_random matches 0 run function tide_redemption:boss/skill/memory_torrent_song/status_a/spawn_tower
-execute if score #user tidedcore_random matches 1 run function tide_redemption:boss/skill/memory_torrent_song/status_b/spawn_tower
-execute if score #user tidedcore_random matches 2 run function tide_redemption:boss/skill/memory_torrent_song/status_a/spawn_tower
+function tide_redemption:boss/boss_random
+
+execute if score #user tidedcore_random matches 1 run function tide_redemption:boss/skill/memory_torrent_song/status_a/spawn_tower
+execute if score #user tidedcore_random matches 2 run function tide_redemption:boss/skill/memory_torrent_song/status_b/spawn_tower

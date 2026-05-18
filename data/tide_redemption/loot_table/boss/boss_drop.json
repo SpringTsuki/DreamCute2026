@@ -1,0 +1,34 @@
+{
+  "type": "entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:rotten_flesh",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:rarity": "epic",
+                "minecraft:custom_name": "{\"translate\":\"game.rngloot.rotten_flesh\"}",
+                "minecraft:lore": [
+                  "{\"translate\":\"game.rngloot.rotten_flesh_lore1\"}",
+                  "{\"translate\":\"game.rngloot.rotten_flesh_lore2\"}",
+                  "{\"translate\":\"game.rngloot.rotten_flesh_lore3\"}"
+                ],
+                "minecraft:food": {
+                  "can_always_eat": true,
+                  "nutrition": 6,
+                  "saturation": 10.0
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

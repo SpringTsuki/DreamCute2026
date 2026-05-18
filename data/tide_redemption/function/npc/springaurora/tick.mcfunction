@@ -7,9 +7,26 @@ execute as @e[tag=tided_npc_springaurora_armor] at @s as @a[distance=3..] run sc
 execute as @a at @s if score @s tided_npc_springaurora_chat matches 2 if score #user tided_npc_springaurora_stage matches 3 run tellraw @s {"translate":"game.npc.name.springaurora.final.1"}
 execute as @a at @s if score @s tided_npc_springaurora_chat matches 40 if score #user tided_npc_springaurora_stage matches 3 run tellraw @s {"translate":"game.npc.name.springaurora.final.2"}
 execute as @a at @s if score @s tided_npc_springaurora_chat matches 80 if score #user tided_npc_springaurora_stage matches 3 run tellraw @s {"translate":"game.npc.name.springaurora.final.3"}
+execute as @a at @s if score @s tided_npc_springaurora_chat matches 90 if score #user tided_npc_springaurora_stage matches 3 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.springaurora.question1"}],"clickEvent":{"action": "run_command","value": "/trigger tided_npc_springaurora_trigger set 3"}}
+
+execute as @a at @s if score @s tided_npc_springaurora_trigger matches 3 run tellraw @s {"translate":"game.npc.name.springaurora.question1.1"}
+execute as @a at @s if score @s tided_npc_springaurora_trigger matches 3 run tellraw @s {"translate":"game.npc.name.springaurora.question1.2"}
+execute as @a at @s if score @s tided_npc_springaurora_trigger matches 3 run tellraw @s {"translate":"game.npc.name.springaurora.question1.3"}
+execute as @a at @s if score @s tided_npc_springaurora_trigger matches 3 run tellraw @s {"translate":"game.npc.name.springaurora.question1.4"}
+execute as @a at @s if score @s tided_npc_springaurora_trigger matches 3 run tellraw @s {"translate":"game.npc.name.springaurora.question1.5"}
+execute as @a at @s if score @s tided_npc_springaurora_trigger matches 3 run tellraw @s {"translate":"game.npc.name.springaurora.question1.6"}
+execute as @a at @s if score @s tided_npc_springaurora_trigger matches 3 run tellraw @s {"translate":"game.npc.name.springaurora.question1.7"}
+execute as @a at @s if score @s tided_npc_springaurora_trigger matches 3 run tellraw @s {"translate":"game.npc.name.springaurora.question1.8"}
+execute as @a at @s if score @s tided_npc_springaurora_trigger matches 3 run tellraw @s {"translate":"game.npc.name.springaurora.question1.9"}
+execute as @a at @s if score @s tided_npc_springaurora_trigger matches 3 run tellraw @s {"translate":"game.npc.name.springaurora.question1.10"}
+execute as @a at @s if score @s tided_npc_springaurora_trigger matches 3 run tellraw @s {"translate":"game.npc.name.springaurora.question1.11"}
+execute as @a at @s if score @s tided_npc_springaurora_trigger matches 3 run tellraw @s {"translate":"game.npc.name.springaurora.question1.12"}
+execute as @a at @s if score @s tided_npc_springaurora_trigger matches 3 run tellraw @s {"translate":"game.npc.name.springaurora.question1.13"}
+execute as @a at @s if score @s tided_npc_springaurora_trigger matches 3 run tellraw @s {"translate":"game.npc.name.springaurora.question1.14"}
 
 execute as @a at @s if score @s tided_npc_springaurora_chat matches 2 if score #user tided_npc_springaurora_stage matches 4 run tellraw @s {"translate":"game.main.ed.end.springaurora.1"}
 execute as @a at @s if score @s tided_npc_springaurora_chat matches 40 if score #user tided_npc_springaurora_stage matches 4 run tellraw @s {"translate":"game.main.ed.end.springaurora.2"}
+execute as @a at @s if score @s tided_npc_springaurora_trigger matches 1.. if score #user tided_npc_springaurora_stage matches 3 run scoreboard players set @s tided_npc_springaurora_trigger 0
 execute if score #user tided_npc_springaurora_stage matches 3..4 run return 0
 
 # 仅触发一次的剧情介绍
@@ -40,8 +57,8 @@ execute if score #user tided_npc_springaurora_once matches 800 run tellraw @a {"
 execute if score #user tided_npc_springaurora_once matches 802 run scoreboard objectives add tided_npc_springaurora_chat trigger
 execute if score #user tided_npc_springaurora_once matches 803 run scoreboard objectives add tided_npc_springaurora_trigger trigger
 execute if score #user tided_npc_springaurora_once matches 804 run scoreboard players set #user tided_npc_springaurora_stage 1
-execute if score #user tided_npc_springaurora_once matches 806 run data modify entity @e[tag=tided_npc_springaurora,tag=!tided_npc_springaurora_once,limit=1] CustomNameVisible set value true
-execute if score #user tided_npc_springaurora_once matches 805 run scoreboard objectives remove tided_npc_springaurora_once
+execute if score #user tided_npc_springaurora_once matches 805 run data modify entity @e[tag=tided_npc_springaurora,tag=!tided_npc_springaurora_once,limit=1] CustomNameVisible set value true
+execute if score #user tided_npc_springaurora_once matches 806 run scoreboard objectives remove tided_npc_springaurora_once
 
 # 初始化的部分在破译核心的项目中
 scoreboard players add #user tided_npc_springaurora_lastmission 1

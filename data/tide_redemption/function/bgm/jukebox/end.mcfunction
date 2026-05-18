@@ -1,0 +1,2 @@
+scoreboard objectives remove bgm_jukebox
+scoreboard objectives remove bgm_jukebox_number

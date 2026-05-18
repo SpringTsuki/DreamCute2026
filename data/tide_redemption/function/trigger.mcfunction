@@ -42,5 +42,3 @@ player CastorVow spawn
 player Starry_Mika spawn
 player Yuan_Ye spawn
 player YuukiRiko spawn
-
-function tide_redemption:boss/lib/image/cut_shard

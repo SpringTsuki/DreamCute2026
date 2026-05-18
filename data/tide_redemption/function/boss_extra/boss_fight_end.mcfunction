@@ -1,0 +1,33 @@
+tp @e[tag=tidedcore] ~ -255 ~
+
+function tide_redemption:boss_extra/skill/boss_spawn/end
+
+# 重置BOSS战
+setblock 937 144 2031 minecraft:air
+clone 939 144 2031 939 143 2031 to minecraft:overworld 937 147 2031 replace
+
+# 开放玩家进入
+clone 936 143 2032 938 145 2032 to minecraft:overworld 936 147 2043 replace
+
+scoreboard objectives remove tidedcore_fight
+scoreboard objectives remove tidedcore_random
+scoreboard objectives remove tidedcore_check_hp_defend
+scoreboard objectives remove tidedcore_check_hp_delete
+scoreboard objectives remove tidedcore_fight_player
+scoreboard objectives remove tidedcore_minhp
+
+function tide_redemption:boss_extra/skill/delay_memory_forget_far/end
+function tide_redemption:boss_extra/skill/delay_memory_forget_near/end
+function tide_redemption:boss_extra/skill/fast_memory_forget_far/end
+function tide_redemption:boss_extra/skill/fast_memory_forget_near/end
+function tide_redemption:boss_extra/skill/memory_torrent_songplus/end
+function tide_redemption:boss_extra/skill/memory_shadow/end
+
+
+# function tide_redemption:boss/boss_fight_end
+
+# 重置检查函数
+scoreboard players set #user bossfight_extra_tidedcore 0
+
+# 变更玩家模式
+gamemode survival @a

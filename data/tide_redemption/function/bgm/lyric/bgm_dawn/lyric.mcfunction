@@ -102,6 +102,6 @@ execute if score #user bgm_dawn matches 4339 run title @a title {"text":""}
 execute if score #user bgm_dawn matches 4339 run title @a subtitle {"translate":"bgm.hackcore.success.49"}
 execute if score #user bgm_dawn matches 4370 run title @a title {"text":""}
 execute if score #user bgm_dawn matches 4370 run title @a subtitle {"translate":"bgm.hackcore.success.50"}
-
+execute if score #user bgm_dawn matches 4371 run tellraw @a {"translate":"bgm.hackcore.success.51"}
 execute if score #user bgm_dawn matches 4371 run setblock 919 75 2031 minecraft:oak_button[face=floor,facing=west,powered=false]
 execute if score #user bgm_dawn matches 4372 run function tide_redemption:bgm/lyric/bgm_dawn/end

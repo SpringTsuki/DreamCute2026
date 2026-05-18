@@ -1,62 +1,62 @@
 # 如果玩家靠近控制台，激活计分板
-execute as @e[tag=tidedcore_log] at @s as @a[distance=..3] run scoreboard players enable @s tidedcore_log
+execute as @e[tag=tidedcore_log] at @s as @a[distance=..1.5] run scoreboard players enable @s tidedcore_log
 
 # 靠近终端
 # 第1段对话触发
-execute as @e[tag=tidedcore_log_1] at @s as @a[distance=..3] run scoreboard players add @s tidedcore_logcheck 1 
-execute as @e[tag=tidedcore_log_1] at @s as @a[distance=..3] if score @s tidedcore_logcheck matches 1 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.log.access"}],"clickEvent":{"action": "run_command","value": "/trigger tidedcore_log set 1"}}
+execute as @e[tag=tidedcore_log_1] at @s as @a[distance=..1.5] run scoreboard players add @s tidedcore_logcheck 1 
+execute as @e[tag=tidedcore_log_1] at @s as @a[distance=..1.5] if score @s tidedcore_logcheck matches 1 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.log.access"}],"clickEvent":{"action": "run_command","value": "/trigger tidedcore_log set 1"}}
 
 # 第2段对话触发
-execute as @e[tag=tidedcore_log_2] at @s as @a[distance=..3] run scoreboard players add @s tidedcore_logcheck 1 
-execute as @e[tag=tidedcore_log_2] at @s as @a[distance=..3] if score @s tidedcore_logcheck matches 1 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.log.access"}],"clickEvent":{"action": "run_command","value": "/trigger tidedcore_log set 2"}}
+execute as @e[tag=tidedcore_log_2] at @s as @a[distance=..1.5] run scoreboard players add @s tidedcore_logcheck 1 
+execute as @e[tag=tidedcore_log_2] at @s as @a[distance=..1.5] if score @s tidedcore_logcheck matches 1 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.log.access"}],"clickEvent":{"action": "run_command","value": "/trigger tidedcore_log set 2"}}
 
 # 第3段对话触发
-execute as @e[tag=tidedcore_log_3] at @s as @a[distance=..3] run scoreboard players add @s tidedcore_logcheck 1 
-execute as @e[tag=tidedcore_log_3] at @s as @a[distance=..3] if score @s tidedcore_logcheck matches 1 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.log.access"}],"clickEvent":{"action": "run_command","value": "/trigger tidedcore_log set 3"}}
+execute as @e[tag=tidedcore_log_3] at @s as @a[distance=..1.5] run scoreboard players add @s tidedcore_logcheck 1 
+execute as @e[tag=tidedcore_log_3] at @s as @a[distance=..1.5] if score @s tidedcore_logcheck matches 1 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.log.access"}],"clickEvent":{"action": "run_command","value": "/trigger tidedcore_log set 3"}}
 
 # 第4段对话触发
-execute as @e[tag=tidedcore_log_4] at @s as @a[distance=..3] run scoreboard players add @s tidedcore_logcheck 1 
-execute as @e[tag=tidedcore_log_4] at @s as @a[distance=..3] if score @s tidedcore_logcheck matches 1 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.log.access"}],"clickEvent":{"action": "run_command","value": "/trigger tidedcore_log set 4"}}
+execute as @e[tag=tidedcore_log_4] at @s as @a[distance=..1.5] run scoreboard players add @s tidedcore_logcheck 1 
+execute as @e[tag=tidedcore_log_4] at @s as @a[distance=..1.5] if score @s tidedcore_logcheck matches 1 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.log.access"}],"clickEvent":{"action": "run_command","value": "/trigger tidedcore_log set 4"}}
 
 # 第5段对话触发
-execute as @e[tag=tidedcore_log_5] at @s as @a[distance=..3] run scoreboard players add @s tidedcore_logcheck 1 
-execute as @e[tag=tidedcore_log_5] at @s as @a[distance=..3] if score @s tidedcore_logcheck matches 1 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.log.access"}],"clickEvent":{"action": "run_command","value": "/trigger tidedcore_log set 5"}}
+execute as @e[tag=tidedcore_log_5] at @s as @a[distance=..1.5] run scoreboard players add @s tidedcore_logcheck 1 
+execute as @e[tag=tidedcore_log_5] at @s as @a[distance=..1.5] if score @s tidedcore_logcheck matches 1 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.log.access"}],"clickEvent":{"action": "run_command","value": "/trigger tidedcore_log set 5"}}
 
 # 第6段对话触发
-execute as @e[tag=tidedcore_log_6] at @s as @a[distance=..3] run scoreboard players add @s tidedcore_logcheck 1 
-execute as @e[tag=tidedcore_log_6] at @s as @a[distance=..3] if score @s tidedcore_logcheck matches 1 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.log.access"}],"clickEvent":{"action": "run_command","value": "/trigger tidedcore_log set 6"}}
+execute as @e[tag=tidedcore_log_6] at @s as @a[distance=..1.5] run scoreboard players add @s tidedcore_logcheck 1 
+execute as @e[tag=tidedcore_log_6] at @s as @a[distance=..1.5] if score @s tidedcore_logcheck matches 1 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.log.access"}],"clickEvent":{"action": "run_command","value": "/trigger tidedcore_log set 6"}}
 
 # 第7段对话触发
-execute as @e[tag=tidedcore_log_7] at @s as @a[distance=..3] run scoreboard players add @s tidedcore_logcheck 1 
-execute as @e[tag=tidedcore_log_7] at @s as @a[distance=..3] if score @s tidedcore_logcheck matches 1 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.log.access"}],"clickEvent":{"action": "run_command","value": "/trigger tidedcore_log set 7"}}
+execute as @e[tag=tidedcore_log_7] at @s as @a[distance=..1.5] run scoreboard players add @s tidedcore_logcheck 1 
+execute as @e[tag=tidedcore_log_7] at @s as @a[distance=..1.5] if score @s tidedcore_logcheck matches 1 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.log.access"}],"clickEvent":{"action": "run_command","value": "/trigger tidedcore_log set 7"}}
 
 # 第8段对话触发
-execute as @e[tag=tidedcore_log_8] at @s as @a[distance=..3] run scoreboard players add @s tidedcore_logcheck 1 
-execute as @e[tag=tidedcore_log_8] at @s as @a[distance=..3] if score @s tidedcore_logcheck matches 1 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.log.access"}],"clickEvent":{"action": "run_command","value": "/trigger tidedcore_log set 8"}}
+execute as @e[tag=tidedcore_log_8] at @s as @a[distance=..1.5] run scoreboard players add @s tidedcore_logcheck 1 
+execute as @e[tag=tidedcore_log_8] at @s as @a[distance=..1.5] if score @s tidedcore_logcheck matches 1 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.log.access"}],"clickEvent":{"action": "run_command","value": "/trigger tidedcore_log set 8"}}
 
 # 第9段对话触发
-execute as @e[tag=tidedcore_log_9] at @s as @a[distance=..3] run scoreboard players add @s tidedcore_logcheck 1 
-execute as @e[tag=tidedcore_log_9] at @s as @a[distance=..3] if score @s tidedcore_logcheck matches 1 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.log.access"}],"clickEvent":{"action": "run_command","value": "/trigger tidedcore_log set 9"}}
+execute as @e[tag=tidedcore_log_9] at @s as @a[distance=..1.5] run scoreboard players add @s tidedcore_logcheck 1 
+execute as @e[tag=tidedcore_log_9] at @s as @a[distance=..1.5] if score @s tidedcore_logcheck matches 1 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.log.access"}],"clickEvent":{"action": "run_command","value": "/trigger tidedcore_log set 9"}}
 
 # 第10段对话触发
-execute as @e[tag=tidedcore_log_10] at @s as @a[distance=..3] run scoreboard players add @s tidedcore_logcheck 1 
-execute as @e[tag=tidedcore_log_10] at @s as @a[distance=..3] if score @s tidedcore_logcheck matches 1 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.log.access"}],"clickEvent":{"action": "run_command","value": "/trigger tidedcore_log set 10"}}
+execute as @e[tag=tidedcore_log_10] at @s as @a[distance=..1.5] run scoreboard players add @s tidedcore_logcheck 1 
+execute as @e[tag=tidedcore_log_10] at @s as @a[distance=..1.5] if score @s tidedcore_logcheck matches 1 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.log.access"}],"clickEvent":{"action": "run_command","value": "/trigger tidedcore_log set 10"}}
 
 # 第11段对话触发
-execute as @e[tag=tidedcore_log_11] at @s as @a[distance=..3] run scoreboard players add @s tidedcore_logcheck 1 
-execute as @e[tag=tidedcore_log_11] at @s as @a[distance=..3] if score @s tidedcore_logcheck matches 1 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.log.access"}],"clickEvent":{"action": "run_command","value": "/trigger tidedcore_log set 11"}}
+execute as @e[tag=tidedcore_log_11] at @s as @a[distance=..1.5] run scoreboard players add @s tidedcore_logcheck 1 
+execute as @e[tag=tidedcore_log_11] at @s as @a[distance=..1.5] if score @s tidedcore_logcheck matches 1 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.log.access"}],"clickEvent":{"action": "run_command","value": "/trigger tidedcore_log set 11"}}
 
 # 第12段对话触发
-execute as @e[tag=tidedcore_log_12] at @s as @a[distance=..3] run scoreboard players add @s tidedcore_logcheck 1 
-execute as @e[tag=tidedcore_log_12] at @s as @a[distance=..3] if score @s tidedcore_logcheck matches 1 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.log.access"}],"clickEvent":{"action": "run_command","value": "/trigger tidedcore_log set 12"}}
+execute as @e[tag=tidedcore_log_12] at @s as @a[distance=..1.5] run scoreboard players add @s tidedcore_logcheck 1 
+execute as @e[tag=tidedcore_log_12] at @s as @a[distance=..1.5] if score @s tidedcore_logcheck matches 1 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.log.access"}],"clickEvent":{"action": "run_command","value": "/trigger tidedcore_log set 12"}}
 
-# 第13段对话触发
-execute as @e[tag=tidedcore_log_13] at @s as @a[distance=..3] run scoreboard players add @s tidedcore_logcheck 1 
-execute as @e[tag=tidedcore_log_13] at @s as @a[distance=..3] if score @s tidedcore_logcheck matches 1 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.log.access"}],"clickEvent":{"action": "run_command","value": "/trigger tidedcore_log set 13"}}
+# 第11.5段对话触发
+execute as @e[tag=tidedcore_log_13] at @s as @a[distance=..1.5] run scoreboard players add @s tidedcore_logcheck 1 
+execute as @e[tag=tidedcore_log_13] at @s as @a[distance=..1.5] if score @s tidedcore_logcheck matches 1 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.log.access"}],"clickEvent":{"action": "run_command","value": "/trigger tidedcore_log set 13"}}
 
 # 第14段对话触发
-execute as @e[tag=tidedcore_log_14] at @s as @a[distance=..3] run scoreboard players add @s tidedcore_logcheck 1 
-execute as @e[tag=tidedcore_log_14] at @s as @a[distance=..3] if score @s tidedcore_logcheck matches 1 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.log.access"}],"clickEvent":{"action": "run_command","value": "/trigger tidedcore_log set 14"}}
+execute as @e[tag=tidedcore_log_14] at @s as @a[distance=..1.5] run scoreboard players add @s tidedcore_logcheck 1 
+execute as @e[tag=tidedcore_log_14] at @s as @a[distance=..1.5] if score @s tidedcore_logcheck matches 1 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.log.access"}],"clickEvent":{"action": "run_command","value": "/trigger tidedcore_log set 14"}}
 
 # 触发对话
 # 第1段对话 (7句)
@@ -189,7 +189,7 @@ execute as @a at @s if score @s tidedcore_log matches 13 run tellraw @s {"transl
 execute as @a at @s if score @s tidedcore_log matches 13 run tellraw @s {"translate":"game.npc.name.log.13.7"}
 
 # 第14段对话 (9句)
-execute as @a at @s if score @s tidedcore_log matches 14 run tellraw @s [{"selector":"@s","color":"dark_purple"},{"translate":"game.npc.name.log.14.1"}]
+execute as @a at @s if score @s tidedcore_log matches 14 run tellraw @s [{"selector":"@s","color":"dark_purple"},{"translate":"game.npc.name.log.14.1"},{"text":"343173753","obfuscated":true,"color":"dark_purple"}]
 execute as @a at @s if score @s tidedcore_log matches 14 run tellraw @s {"translate":"game.npc.name.log.14.2"}
 execute as @a at @s if score @s tidedcore_log matches 14 run tellraw @s {"translate":"game.npc.name.log.14.3"}
 execute as @a at @s if score @s tidedcore_log matches 14 run tellraw @s {"translate":"game.npc.name.log.14.4"}

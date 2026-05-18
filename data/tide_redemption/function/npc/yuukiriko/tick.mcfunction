@@ -36,16 +36,20 @@ execute if score #user npc_yuukiriko_once matches 600 run tellraw @a {"translate
 execute if score #user npc_yuukiriko_once matches 650 run tellraw @a {"translate":"game.npc.name.yuukiriko.chat13"}
 execute if score #user npc_yuukiriko_once matches 700 run tellraw @a {"translate":"game.npc.name.yuukiriko.chat14"}
 execute if score #user npc_yuukiriko_once matches 750 run tellraw @a {"translate":"game.npc.name.yuukiriko.chat15"}
+execute if score #user npc_yuukiriko_once matches 800 run tellraw @a {"translate":"game.npc.name.yuukiriko.chat16"}
+execute if score #user npc_yuukiriko_once matches 850 run tellraw @a {"translate":"game.npc.name.yuukiriko.chat17"}
+execute if score #user npc_yuukiriko_once matches 850 run give @a minecraft:spyglass[custom_name='{"translate":"game.item.tools.chat"}',lore=['{"translate":"game.item.tools.chat_lore1"}','{"translate":"game.item.tools.chat_lore2"}']]
+execute if score #user npc_yuukiriko_once matches 900 run tellraw @a {"translate":"game.npc.name.yuukiriko.chat18"}
 
 # 后续对话计分板初始化
-execute if score #user npc_yuukiriko_once matches 751 run scoreboard objectives add npc_yuukiriko_chat trigger
+execute if score #user npc_yuukiriko_once matches 901 run scoreboard objectives add npc_yuukiriko_chat trigger
 
 # 设置第一次剧情介绍时不触发靠近对话
-execute if score #user npc_yuukiriko_once matches 752 run scoreboard players set @a npc_yuukiriko_chat 61
+execute if score #user npc_yuukiriko_once matches 902 run scoreboard players set @a npc_yuukiriko_chat 61
 
 # 后续对话问题计分板初始化
-execute if score #user npc_yuukiriko_once matches 752 run scoreboard objectives add npc_yuukiriko_trigger trigger
-execute if score #user npc_yuukiriko_once matches 752 run scoreboard objectives remove npc_yuukiriko_once
+execute if score #user npc_yuukiriko_once matches 903 run scoreboard objectives add npc_yuukiriko_trigger trigger
+execute if score #user npc_yuukiriko_once matches 904 run scoreboard objectives remove npc_yuukiriko_once
 
 # 触发后续对话
 execute as @a at @s if score @s npc_yuukiriko_chat matches 2 run tellraw @s {"translate":"game.npc.name.yuukiriko.welcome1"}
@@ -54,6 +58,7 @@ execute as @a at @s if score @s npc_yuukiriko_chat matches 40 run tellraw @s {"t
 execute as @a at @s if score @s npc_yuukiriko_chat matches 45 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.yuukiriko.question1"}],"clickEvent":{"action": "run_command","value": "/trigger npc_yuukiriko_trigger set 1"}}
 execute as @a at @s if score @s npc_yuukiriko_chat matches 50 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.yuukiriko.question2"}],"clickEvent":{"action": "run_command","value": "/trigger npc_yuukiriko_trigger set 2"}}
 execute as @a at @s if score @s npc_yuukiriko_chat matches 55 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.yuukiriko.question3"}],"clickEvent":{"action": "run_command","value": "/trigger npc_yuukiriko_trigger set 3"}}
+execute as @a at @s if score @s npc_yuukiriko_chat matches 55 run tellraw @s {"text":"","extra":[{"translate":"game.npc.name.yuukiriko.question4"}],"clickEvent":{"action": "run_command","value": "/trigger npc_yuukiriko_trigger set 4"}}
 
 # 触发后续问题对话
 execute as @a at @s if score @s npc_yuukiriko_trigger matches 1 run tellraw @s {"translate":"game.npc.name.yuukiriko.question1.1"}
@@ -71,6 +76,10 @@ execute as @a at @s if score @s npc_yuukiriko_trigger matches 2 run tellraw @s {
 execute as @a at @s if score @s npc_yuukiriko_trigger matches 3 run tellraw @s {"translate":"game.npc.name.yuukiriko.question3.1"}
 execute as @a at @s if score @s npc_yuukiriko_trigger matches 3 run tellraw @s {"translate":"game.npc.name.yuukiriko.question3.2"}
 execute as @a at @s if score @s npc_yuukiriko_trigger matches 3 run tellraw @s {"translate":"game.npc.name.yuukiriko.question3.3"}
+
+execute as @a at @s if score @s npc_yuukiriko_trigger matches 4 run tellraw @s {"translate":"game.npc.name.yuukiriko.question4.1"}
+execute as @a at @s if score @s npc_yuukiriko_trigger matches 4 run tellraw @s {"translate":"game.npc.name.yuukiriko.question4.2"}
+execute as @a at @s if score @s npc_yuukiriko_trigger matches 4 run function tide_redemption:npc/yuukiriko/give_sypglass
 
 # 后续对话初始化
 execute as @a at @s if score @s npc_yuukiriko_trigger matches 0.. run scoreboard players set @s npc_yuukiriko_trigger 0

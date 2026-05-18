@@ -1,0 +1,15 @@
+{
+    "criteria": {
+      "used_spyglass": {
+        "trigger": "minecraft:using_item",
+        "conditions": {
+          "item": {
+            "items": "minecraft:spyglass"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "tide_redemption:main/glowing/effect"
+    }
+  }

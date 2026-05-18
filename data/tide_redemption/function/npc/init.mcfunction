@@ -5,3 +5,6 @@ function tide_redemption:npc/castorvow/init_npc
 function tide_redemption:npc/yuanye/init_npc
 function tide_redemption:npc/springaurora/init_npc
 function tide_redemption:npc/database/init_npc
+function tide_redemption:npc/log/init
+function tide_redemption:npc/secretdb/init_npc
+# function tide_redemption:npc/init

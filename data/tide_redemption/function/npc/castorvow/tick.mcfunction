@@ -39,6 +39,12 @@ execute if score #user tided_npc_castorvow_once matches 402 run scoreboard objec
 # 盔甲架显示名称
 execute if score #user tided_npc_castorvow_once matches 402 run data modify entity @e[tag=tided_npc_castorvow,tag=!tided_npc_castorvow_once,limit=1] CustomNameVisible set value true
 
+# 音乐阶段更改
+execute if score #user tided_npc_castorvow_once matches 402 run scoreboard players set #user bgm_leave_base_stage 2
+
+# 回收once计分板
+execute if score #user tided_npc_castorvow_once matches 402 run scoreboard objectives remove tided_npc_castorvow_once
+
 # 触发后续对话
 execute as @a at @s if score @s tided_npc_castorvow_chat matches 2 run tellraw @s {"translate":"game.npc.name.castorvow.welcome1"}
 execute as @a at @s if score @s tided_npc_castorvow_chat matches 20 run tellraw @s {"translate":"game.npc.name.castorvow.welcome2"}

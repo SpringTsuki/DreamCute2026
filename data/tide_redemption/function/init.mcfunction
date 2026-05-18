@@ -4,7 +4,9 @@ function tide_redemption:main/stage_1/game_start
 gamemode adventure @a
 
 # 全局游戏规则
-gamerule doDaylightCycle true
+time set midnight
+gamerule doDaylightCycle false
+
 gamerule mobGriefing false
 gamerule commandBlockOutput false
 gamerule keepInventory true
