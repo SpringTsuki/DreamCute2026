@@ -67,7 +67,7 @@ execute as @e[tag=memory_shadow_a,tag=memory_shadow_armor,tag=memory_shadow_cut]
 
 # 大圈判定
 execute as @e[tag=memory_shadow_a,tag=memory_shadow_armor,tag=memory_shadow_cut] at @s positioned ~ ~0.0625 ~ if score #user memory_shadow_realize matches 200 run function tide_redemption:boss_extra/skill/memory_shadow/paste/image/circle_red
-execute as @e[tag=memory_shadow_a,tag=memory_shadow_armor,tag=memory_shadow_cut] at @s if entity @a[distance=..15] run effect give @a[distance=..15] minecraft:instant_damage 1 2
+execute as @e[tag=memory_shadow_a,tag=memory_shadow_armor,tag=memory_shadow_cut] at @s if entity @a[distance=..15] if score #user memory_shadow_realize matches 200 run effect give @a[distance=..15] minecraft:instant_damage 1 2
 
 # 分摊
 execute as @e[tag=memory_shadow_a,tag=memory_shadow_armor,tag=memory_shadow_module] at @s positioned ~ ~2.5 ~ if score #user memory_shadow_realize matches 120 run function tide_redemption:boss_extra/lib/image/cut_module
@@ -88,7 +88,7 @@ execute as @e[tag=memory_shadow_b,tag=memory_shadow_armor,tag=memory_shadow_cut]
 
 # 大圈判定
 execute as @e[tag=memory_shadow_b,tag=memory_shadow_armor,tag=memory_shadow_cut] at @s positioned ~ ~0.0625 ~ if score #user memory_shadow_realize matches 200 run function tide_redemption:boss_extra/skill/memory_shadow/paste/image/circle_red
-execute as @e[tag=memory_shadow_b,tag=memory_shadow_armor,tag=memory_shadow_cut] at @s if entity @a[distance=..15] run effect give @a[distance=..15] minecraft:instant_damage 1 2
+execute as @e[tag=memory_shadow_b,tag=memory_shadow_armor,tag=memory_shadow_cut] at @s if entity @a[distance=..15] if score #user memory_shadow_realize matches 200 run effect give @a[distance=..15] minecraft:instant_damage 1 2
 
 # 分摊
 execute as @e[tag=memory_shadow_b,tag=memory_shadow_armor,tag=memory_shadow_module] at @s positioned ~ ~2.5 ~ if score #user memory_shadow_realize matches 120 run function tide_redemption:boss_extra/lib/image/cut_module
@@ -115,7 +115,7 @@ execute as @e[tag=memory_shadow_c,tag=memory_shadow_armor,tag=memory_shadow_cut]
 
 # 大圈判定
 execute as @e[tag=memory_shadow_c,tag=memory_shadow_armor,tag=memory_shadow_cut] at @s positioned ~ ~0.0625 ~ if score #user memory_shadow_realize matches 300 run function tide_redemption:boss_extra/skill/memory_shadow/paste/image/circle_red
-execute as @e[tag=memory_shadow_c,tag=memory_shadow_armor,tag=memory_shadow_cut] at @s if entity @a[distance=..15] run effect give @a[distance=..15] minecraft:instant_damage 1 2
+execute as @e[tag=memory_shadow_c,tag=memory_shadow_armor,tag=memory_shadow_cut] at @s if entity @a[distance=..15] if score #user memory_shadow_realize matches 300 run effect give @a[distance=..15] minecraft:instant_damage 1 2
 
 # 分摊
 execute as @e[tag=memory_shadow_c,tag=memory_shadow_armor,tag=memory_shadow_module] at @s positioned ~ ~2.5 ~ if score #user memory_shadow_realize matches 220 run function tide_redemption:boss_extra/lib/image/cut_module
@@ -136,7 +136,7 @@ execute as @e[tag=memory_shadow_d,tag=memory_shadow_armor,tag=memory_shadow_cut]
 
 # 大圈判定
 execute as @e[tag=memory_shadow_d,tag=memory_shadow_armor,tag=memory_shadow_cut] at @s positioned ~ ~0.0625 ~ if score #user memory_shadow_realize matches 300 run function tide_redemption:boss_extra/skill/memory_shadow/paste/image/circle_red
-execute as @e[tag=memory_shadow_d,tag=memory_shadow_armor,tag=memory_shadow_cut] at @s if entity @a[distance=..15] run effect give @a[distance=..15] minecraft:instant_damage 1 2
+execute as @e[tag=memory_shadow_d,tag=memory_shadow_armor,tag=memory_shadow_cut] at @s if entity @a[distance=..15] if score #user memory_shadow_realize matches 300 run effect give @a[distance=..15] minecraft:instant_damage 1 2
 
 # 分摊
 execute as @e[tag=memory_shadow_d,tag=memory_shadow_armor,tag=memory_shadow_module] at @s positioned ~ ~2.5 ~ if score #user memory_shadow_realize matches 220 run function tide_redemption:boss_extra/lib/image/cut_module

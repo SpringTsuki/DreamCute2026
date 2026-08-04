@@ -13,7 +13,7 @@ execute if score #user memory_shadow_phantom matches 50 run summon armor_stand 9
 # 创建
 execute if score #user memory_shadow_phantom matches 110 run kill @e[tag=memory_shadow_dust]
 execute if score #user memory_shadow_phantom matches 110 run summon armor_stand 937 147 2023 {Tags:[memory_shadow_a,memory_shadow_armor],Invisible:false,NoGravity:true,Invulnerable:true,ArmorItems:[{id:"minecraft:leather_boots"},{id:"minecraft:leather_leggings"},{id:"minecraft:leather_chestplate"},{id:"minecraft:player_head",components:{profile:SpringAurora}}],Rotation:[0f]}
-execute if score #user memory_shadow_phantom matches 110 run summon armor_stand 937 147 2039 {Tags:[memory_shadow_b,memory_shadow_armor],Invisible:false,NoGravity:true,Invulnerable:true,ArmorItems:[{id:"minecraft:leather_boots"},{id:"minecraft:leather_leggings"},{id:"minecraft:leather_chestplate"},{id:"minecraft:player_head",components:{profile:CastorVow}}],Rotation:[180f]}
+execute if score #user memory_shadow_phantom matches 110 run summon armor_stand 937 147 2039 {Tags:[memory_shadow_b,memory_shadow_armor],Invisible:false,NoGravity:true,Invulnerable:true,ArmorItems:[{id:"minecraft:leather_boots"},{id:"minecraft:leather_leggings"},{id:"minecraft:leather_chestplate"},{id:"minecraft:player_head",components:{profile:YuukiRiko}}],Rotation:[180f]}
 
 # 创建假人2、4
 # 动画
